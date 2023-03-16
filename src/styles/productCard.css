@@ -8,10 +8,12 @@
 }
 
 .imgStyle {
-  /* max-height: 220px; */
   display: block;
+  height: 220px;
   max-width: 300px;
-  max-height: 20px !important;
+  max-height: 260px !important;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0 !important;
 }
 
 h2 {
