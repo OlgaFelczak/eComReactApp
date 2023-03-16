@@ -15,7 +15,8 @@ const LatestProducts = (props) => {
         title={products[0].title}
         description={products[0].description}
         price={products[0].description}
-        /></div>
+        />
+        </div>
         <div className='col-sm'><ProductCard
         image={products[1].image}
         title={products[1].title}
@@ -23,10 +24,10 @@ const LatestProducts = (props) => {
         price={products[1].description}
         /></div>
         <div className='col-sm'><ProductCard
-        image={products[1].image}
-        title={products[1].title}
-        description={products[1].description}
-        price={products[1].description}
+        image={products[2].image}
+        title={products[2].title}
+        description={products[2].description}
+        price={products[2].description}
         /></div>
       </div>
     </div>
