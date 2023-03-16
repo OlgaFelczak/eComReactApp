@@ -1,6 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BsImage, BsFacebook, BsInstagram, BsPinterest } from 'react-icons/bs';
+import {
+  BsFillGeoAltFill,
+  BsFillTelephoneFill,
+  BsEnvelopeFill,
+  BsFacebook,
+  BsInstagram,
+  BsPinterest,
+} from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -8,72 +15,51 @@ const Footer = () => {
       <footer className='py-5 my-5 border-top'>
         <div className='row'>
           <div className='col-2'>
-            <h5>Logo</h5>
-            <a
-              href='/'
-              className='d-flex align-items-center mb-3 link-dark text-decoration-none'
-            >
-              <BsImage />
+            <a href='/'>
+              <img src={'../../public/Images/logo.jpg'} />
             </a>
           </div>
 
           <div className='col-2'>
-            <h5>Section</h5>
+            <h5>Useful Links</h5>
             <ul className='nav flex-column'>
               <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
+                <a href='/' className='nav-link p-0 text-muted'>
                   Home
                 </a>
               </li>
               <li className='nav-item mb-2'>
                 <a href='#' className='nav-link p-0 text-muted'>
-                  Features
-                </a>
-              </li>
-              <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
-                  Pricing
-                </a>
-              </li>
-              <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
-                  FAQs
-                </a>
-              </li>
-              <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
                   About
+                </a>
+              </li>
+              <li className='nav-item mb-2'>
+                <a href='#' className='nav-link p-0 text-muted'>
+                  Sign in
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className='col-2'>
-            <h5>Section</h5>
+          <div className='col-3'>
+            <h5>Contact Us</h5>
             <ul className='nav flex-column'>
               <li className='nav-item mb-2'>
                 <a href='#' className='nav-link p-0 text-muted'>
-                  Home
+                  <BsFillGeoAltFill /> 15 Way Road, Witton G63 4XY
                 </a>
               </li>
               <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
-                  Features
+                <a href='tel:+441632960451' className='nav-link p-0 text-muted'>
+                  <BsFillTelephoneFill /> +44 1632 960451
                 </a>
               </li>
               <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
-                  Pricing
-                </a>
-              </li>
-              <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
-                  FAQs
-                </a>
-              </li>
-              <li className='nav-item mb-2'>
-                <a href='#' className='nav-link p-0 text-muted'>
-                  About
+                <a
+                  href='mailto:contactmakeupjunkie@gmail.com'
+                  className='nav-link p-0 text-muted'
+                >
+                  <BsEnvelopeFill /> contactmakeupjunkie@gmail.com
                 </a>
               </li>
             </ul>
@@ -81,8 +67,11 @@ const Footer = () => {
 
           <div className='col-4 offset-1'>
             <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of whats new and exciting from us.</p>
+              <h5>Sign up to our newsletter!</h5>
+              <p>
+                Millions already enjoy our free emails full of offers & new
+                products.
+              </p>
               <div className='d-flex w-100 gap-2'>
                 <label htmlFor='newsletter1' className='visually-hidden'>
                   Email address
