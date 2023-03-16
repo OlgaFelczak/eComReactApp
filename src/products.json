@@ -2,56 +2,56 @@
     {
         "id": 0,
         "title": "Lipstick",
-        "image": "./public/Images/lipstick.png",
+        "image": "/Images/lipstick.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£4.99"
     },
     {
         "id": 1,
         "title": "Nail polish",
-        "image": "./public/Images/nailpolish.png",
+        "image": "/Images/nailpolish.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£2.99"
     },
     {
         "id": 2,
         "title": "Foundation",
-        "image": "./public/Images/foundation.png",
+        "image": "/Images/foundation.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£9.99"
     },
     {
         "id": 3,
         "title": "Highlighter",
-        "image": "./public/Images/highlighter.png",
+        "image": "/Images/highlighter.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£7.99"
     },
     {
         "id": 4,
         "title": "Mascara",
-        "image": "./public/Images/mascara.png",
+        "image": "/Images/mascara.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£12.99"
     },
     {
         "id": 5,
         "title": "Lip Gloss",
-        "image": "./public/Images/lipgloss.png",
+        "image": "/Images/lipgloss.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£11.99"
     },
     {
         "id": 6,
         "title": "Eyeliner",
-        "image": "./public/Images/eyeliner.png",
+        "image": "/Images/eyeliner.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£6.99"
     },
     {
         "id": 7,
         "title": "Lip balm",
-        "image": "./public/Images/lipbalm.png",
+        "image": "/Images/lipbalm.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£3.99"
     }

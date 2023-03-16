@@ -1,0 +1,19 @@
+.card {
+  width: 300px;
+  min-height: 380px;
+  border-width: 1px !important;
+  border-radius: 10px !important;
+  margin: 1rem;
+  position: relative;
+}
+
+.imgStyle {
+  /* max-height: 220px; */
+  display: block;
+  max-width: 300px;
+  max-height: 20px !important;
+}
+
+h2 {
+  text-align: center;
+}
