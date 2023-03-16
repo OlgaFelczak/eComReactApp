@@ -13,8 +13,18 @@ const LatestProducts = () => {
         description={products[0].description}
         price={products[0].description}
         /></div>
-        <div className='col-sm'><ProductCard /></div>
-        <div className='col-sm'><ProductCard /></div>
+        <div className='col-sm'><ProductCard
+        image={products[1].image}
+        title={products[1].title}
+        description={products[1].description}
+        price={products[1].description}
+        /></div>
+        <div className='col-sm'><ProductCard
+        image={products[1].image}
+        title={products[1].title}
+        description={products[1].description}
+        price={products[1].description}
+        /></div>
       </div>
     </div>
   )
