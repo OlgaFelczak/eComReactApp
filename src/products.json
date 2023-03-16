@@ -9,7 +9,7 @@
     {
         "id": 1,
         "title": "Nail polish",
-        "image": "./public/Images/nailpoilish.png",
+        "image": "./public/Images/nailpolish.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£2.99"
     },
