@@ -2,7 +2,9 @@ import React from 'react'
 
 const LatestProducts = () => {
   return (
-    <div>Main</div>
+    <div className='container'>
+      <h2>Latest Products</h2>
+    </div>
   )
 }
 
