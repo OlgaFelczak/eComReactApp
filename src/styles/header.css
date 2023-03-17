@@ -1,0 +1,63 @@
+.navBar{
+    margin: 1rem;
+}
+
+.navbar-title{
+    font-size: 2.5rem;
+    text-align:center;
+    width: 30rem;
+    font-family: 'Garamond', Times, serif
+}
+
+.img-navbar{
+   border-radius: 50%; 
+}
+
+/* Search Bar */
+.search-bar{
+   margin-right: 2rem !important;
+}
+
+.search{
+    border-radius: 15px !important;
+    /* text-decoration: none; */
+    /* appearance: none; */
+}
+
+.search:focus{
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+.btn-search{
+    margin-left: -50px;
+    border: none !important;
+    background-color: transparent !important;
+}
+
+.search-icon{
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* Navbar links */
+.links{
+    display: flex;
+    margin-right: 2rem;
+    font-family: 'Lucida Console', Courier, monospace;
+}
+
+
+.login{
+    border-right: 1px solid black;
+    margin-right: 1rem;
+    padding-right: 1rem !important; 
+}
+
+.login-icon, .cart-icon{
+    font-size: 1.2rem;
+}
