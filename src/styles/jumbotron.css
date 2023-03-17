@@ -1,0 +1,21 @@
+.jumbotronContainer {
+  background-image: url(/public/Images/carouselpic7.png);
+  background-size: cover;
+  height: 600px;
+  padding-top: 136px;
+  padding-left: 36px;
+}
+
+.jumbotronContainer h1 {
+  font-size: 64px;
+}
+
+.jumbotronContainer p {
+  font-size: 24px;
+  padding-top: 18px;
+}
+
+.jumbotronBtn {
+  height: 42px;
+  width: 150px !important;
+}
