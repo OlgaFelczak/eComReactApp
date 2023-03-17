@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import LatestProducts from './components/LatestProducts';
-import Carousel from './components/Carousel';
+import ShopCarousel from './components/ShopCarousel';
 import Footer from './components/Footer';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <Header />
       <LatestProducts />
-      <Carousel />
+      <ShopCarousel />
       <Footer />
     </div>
   );

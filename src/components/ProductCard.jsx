@@ -20,7 +20,7 @@ function ProductCard(props) {
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
         <Card.Text>{props.price}</Card.Text>
-        <Button variant="primary">Buy</Button>
+        <Button variant="primary">Add to Cart</Button>
       </Card.Body>
     </Card>       
   );
