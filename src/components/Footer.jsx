@@ -1,10 +1,10 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Links from './Links';
 import Contact from './Contact';
 import Newsletter from './Newsletter';
 import CopywriteAndSocialIcons from './CopywriteAndSocialIcons';
 import '../styles/footer.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Footer = () => {
   return (
@@ -13,10 +13,7 @@ const Footer = () => {
         <div className='row'>
           <div className='col-2'>
             <a href='/'>
-              <img
-                src={'../../public/Images/logo.png'}
-                className='img-footer'
-              />
+              <img src={'/Images/logo.png'} className='img-footer' />
             </a>
           </div>
           <Links />
