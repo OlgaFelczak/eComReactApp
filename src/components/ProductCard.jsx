@@ -15,7 +15,7 @@ import "../styles/productCard.css";
 function ProductCard(props) {
   return (
     <Card className='card'>
-      <Card.Img className='imgStyle' variant="top" src={props.image} />
+      <Card.Img className='imgStyle' variant="top" src={props.image} alt={props.imageAlt} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>
