@@ -2,56 +2,72 @@
     {
         "id": 0,
         "title": "Lipstick",
+        "href": "#",
         "image": "/Images/lipstick.png",
+        "imageAlt": "Photo of lipstick",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£4.99"
     },
     {
         "id": 1,
-        "title": "Nail polish",
+        "title": "Nail Polish",
+        "href": "#",
         "image": "/Images/nailpolish.png",
+        "imageAlt": "Photo of Nail Polish",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£2.99"
     },
     {
         "id": 2,
         "title": "Foundation",
+        "href": "#",
         "image": "/Images/foundation.png",
+        "imageAlt": "Photo of Foundation",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£9.99"
     },
     {
         "id": 3,
         "title": "Highlighter",
+        "href": "#",
         "image": "/Images/highlighter.png",
+        "imageAlt": "Photo of Highlighter",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£7.99"
     },
     {
         "id": 4,
         "title": "Mascara",
+        "href": "#",
         "image": "/Images/mascara.png",
+        "imageAlt": "Photo of Mascara",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£12.99"
     },
     {
         "id": 5,
         "title": "Lip Gloss",
+        "href": "#",
         "image": "/Images/lipgloss.png",
+        "imageAlt": "Photo of Lip Gloss",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£11.99"
     },
     {
         "id": 6,
         "title": "Eyeliner",
+        "href": "#",
         "image": "/Images/eyeliner.png",
+        "imageAlt": "Picture of Eyeliner",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£6.99"
     },
     {
         "id": 7,
-        "title": "Lip balm",
+        "title": "Lip Balm",
+        "href": "#",
         "image": "/Images/lipbalm.png",
+        "imageAlt": "Photo of Lip Balm",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "price": "£3.99"
     }

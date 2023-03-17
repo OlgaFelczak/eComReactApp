@@ -8,7 +8,7 @@
 
 // export default Carousel
 import Carousel from 'react-bootstrap/Carousel';
-import '../styles/ShopCarousel.css';
+import '../styles/shopCarousel.css';
 
 function ShopCarousel() {
   return (
