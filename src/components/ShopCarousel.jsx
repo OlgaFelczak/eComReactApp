@@ -15,7 +15,7 @@ function ShopCarousel() {
     <Carousel className='carouselStyle'>
       <Carousel.Item interval={3000}>
         <img
-          className='d-block w-100 imgStyle'
+          className='d-block w-100 imgCarouselStyle'
           // src="holder.js/800x400?text=First slide&bg=373940"
           src='/Images/carouselpic10.png'
           alt='First slide'
@@ -27,7 +27,7 @@ function ShopCarousel() {
       </Carousel.Item>
       <Carousel.Item interval={2000}>
         <img
-          className='d-block w-100 imgStyle'
+          className='d-block w-100 imgCarouselStyle'
           // src="holder.js/800x400?text=Second slide&bg=282c34"
           src='/Images/carouselpic13.png'
           alt='Second slide'
@@ -39,7 +39,7 @@ function ShopCarousel() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className='d-block w-100 imgStyle'
+          className='d-block w-100 imgCarouselStyle'
           src='/Images/carouselpic1.png'
           alt='Third slide'
         />

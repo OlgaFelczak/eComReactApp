@@ -1,9 +1,13 @@
+.cardCol {
+  /* margin: 2px; */
+}
+
 .card {
   width: 300px;
   min-height: 380px;
   border-width: 1px !important;
   border-radius: 10px !important;
-  margin: 1rem;
+  /* margin: 1rem !important; */
   position: relative;
 }
 
@@ -12,7 +16,7 @@
   /* width: 100%; */
   /* height: auto; */
   height: 240px;
-  max-width: 300px;
+  max-width: 320px;
   max-height: 260px !important;
   object-fit: cover;
   border-radius: 10px 10px 0 0 !important;

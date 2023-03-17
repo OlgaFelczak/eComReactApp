@@ -2,6 +2,7 @@ import React from 'react'
 import ProductCard from './ProductCard'
 import products from "../products.json"
 // import items from "../items.json" 
+// import "../styles/productCard.css"
 
 
 
@@ -10,7 +11,7 @@ const LatestProducts = (props) => {
     <div className='container'>
       <h2>Latest Products</h2>
       <div className='row'>
-        <div className='col-sm-3'><ProductCard
+        <div className='col-sm-3 cardCol'><ProductCard
         image={products[0].image}
         imageAlt={products[0].imageAlt}
         title={products[0].title}
@@ -18,21 +19,21 @@ const LatestProducts = (props) => {
         price={products[0].price}
         />
         </div>
-        <div className='col-sm-3'><ProductCard
+        <div className='col-sm-3 cardCol'><ProductCard
         image={products[1].image}
         imageAlt={products[1].imageAlt}
         title={products[1].title}
         description={products[1].description}
         price={products[1].price}
         /></div>
-        <div className='col-sm-3'><ProductCard
+        <div className='col-sm-3 cardCol'><ProductCard
         image={products[2].image}
         imageAlt={products[2].imageAlt}
         title={products[2].title}
         description={products[2].description}
         price={products[2].price}
         /></div>
-        <div className='col-sm-3'><ProductCard
+        <div className='col-sm-3 cardCol'><ProductCard
         image={products[3].image}
         imageAlt={products[3].imageAlt}
         title={products[3].title}

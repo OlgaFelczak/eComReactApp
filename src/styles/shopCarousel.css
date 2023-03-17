@@ -1,8 +1,11 @@
 .carouselStyle {
   margin: 1rem !important;
+  /* height: 100px !important; */
 }
 
-.imgStyle {
-  height: 240px;
+.imgCarouselStyle {
+  display: block;
+  object-fit: cover;
+  height: 400px;
   margin: 1rem !important;
 }
