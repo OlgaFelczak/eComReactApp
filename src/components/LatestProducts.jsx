@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCard from './ProductCard'
-import products from "../products.json"
+// import products from "../products.json"
+// import { productsArray } from "../productsStore";
 // import items from "../items.json" 
 // import "../styles/productCard.css"
 
@@ -11,15 +12,16 @@ const LatestProducts = (props) => {
     <div className='container'>
       <h2>Latest Products</h2>
       <div className='row'>
-        <div className='col-sm-3 cardCol'><ProductCard
+        
+        {/* <div className='col-sm-3 cardCol'><ProductCard
         image={products[0].image}
         imageAlt={products[0].imageAlt}
         title={products[0].title}
         description={products[0].description}
         price={products[0].price}
         />
-        </div>
-        <div className='col-sm-3 cardCol'><ProductCard
+        </div> */}
+        {/* <div className='col-sm-3 cardCol'><ProductCard
         image={products[1].image}
         imageAlt={products[1].imageAlt}
         title={products[1].title}
@@ -40,7 +42,7 @@ const LatestProducts = (props) => {
         description={products[3].description}
         price={products[3].price}
         />
-        </div>
+        </div> */}
       </div>
     </div>
 
