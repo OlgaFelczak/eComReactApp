@@ -6,8 +6,12 @@ const Newsletter = () => {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    alert('Your email has been added');
+    reset();
+  };
 
   return (
     <form className='col-4 offset-1' onSubmit={handleSubmit(onSubmit)}>
