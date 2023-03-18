@@ -5,6 +5,10 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Product, { loader as productLoader } from './pages/Product';
 
+import Cancel from './pages/Cancel';
+import Success from './pages/Success';
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -14,6 +18,14 @@ const router = createBrowserRouter([
     path: 'product/:productId',
     element: <Product />,
     loader: productLoader,
+  },
+  {
+    path: "cancel/",
+    element: <Cancel />,
+  },
+  {
+    path: "success/",
+    element: <Success />,
   },
 ]);
 
