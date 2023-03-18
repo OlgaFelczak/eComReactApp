@@ -14,7 +14,7 @@ const Newsletter = () => {
   };
 
   return (
-    <form className='col-4 offset-1' onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <h5>Sign up to our newsletter!</h5>
       <p>
         Millions already enjoy our free emails full of offers & new products.
