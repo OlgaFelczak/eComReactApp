@@ -1,17 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
-import LatestProducts from './components/LatestProducts';
-import ShopCarousel from './components/ShopCarousel';
 import Footer from './components/Footer';
-import HomeJumbotron from './components/Jumbotron';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <HomeJumbotron />
-      <LatestProducts />
-      <ShopCarousel />
+      <Home />
       <Footer />
     </div>
   );
