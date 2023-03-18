@@ -2,7 +2,7 @@ import React from 'react';
 
 function Links() {
   return (
-    <div className='col-2'>
+    <div>
       <h5>Useful Links</h5>
       <ul className='nav flex-column'>
         <li className='nav-item mb-2'>

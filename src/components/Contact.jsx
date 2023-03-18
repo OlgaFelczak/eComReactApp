@@ -7,7 +7,7 @@ import {
 
 function Contact() {
   return (
-    <div className='col-3'>
+    <div>
       <h5>Contact Us</h5>
       <ul className='nav flex-column'>
         <li className='nav-item mb-2'>
@@ -21,11 +21,8 @@ function Contact() {
           </a>
         </li>
         <li className='nav-item mb-2'>
-          <a
-            href='mailto:contactmakeupjunkie@gmail.com'
-            className='nav-link p-0 text-muted'
-          >
-            <BsEnvelopeFill /> contactmakeupjunkie@gmail.com
+          <a href='mailto:contact@mj.com' className='nav-link p-0 text-muted'>
+            <BsEnvelopeFill /> contact@mj.com
           </a>
         </li>
       </ul>
