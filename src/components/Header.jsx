@@ -21,7 +21,7 @@ const Header = () => {
     <Navbar className='navBar' expand='lg'>
       <Navbar.Brand href='#'>
         <img
-          src={'Images/logo.png'}
+          src={'/Images/logo.png'}
           width='80'
           height='80'
           className='d-inline-block align-top img-navbar'
