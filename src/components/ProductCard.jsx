@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const ProductCard = () => {
-//   return (
-//     <div>ProductCard</div>
-//   )
-// }
-
-// export default ProductCard
-
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "../styles/productCard.css";

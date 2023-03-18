@@ -1,12 +1,3 @@
-// import React from 'react'
-
-// const Carousel = () => {
-//   return (
-//     <div>Carousel</div>
-//   )
-// }
-
-// export default Carousel
 import Carousel from 'react-bootstrap/Carousel';
 import '../styles/shopCarousel.css';
 
