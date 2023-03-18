@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Product from './pages/Product';
+import Product, { loader as productLoader } from './pages/Product';
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,9 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: 'Product',
+    path: 'product/:productId',
     element: <Product />,
+    loader: productLoader,
   },
 ]);
 
