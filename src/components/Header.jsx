@@ -4,11 +4,20 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Modal from 'react-bootstrap/Modal'; {/* added by Pawel */}
+import { useState } from 'react'; {/* added by Pawel */}
 import { FaShoppingCart, FaUser, FaSearch } from 'react-icons/fa';
 import '../styles/header.css';
 
 const Header = () => {
+
+  const [show, setShow] = useState(false);  
+  const handleClose = () => setShow(false); 
+  const handleShow = () => setShow(true); 
+
   return (
+    <> 
+
     <Navbar className='navBar' expand='lg'>
       <Navbar.Brand href='#'>
         <img
@@ -41,10 +50,24 @@ const Header = () => {
           <FaUser className='login-icon' />
         </Nav.Link>
         <Nav.Link className='cart' href='#action2'>
-          <FaShoppingCart className='cart-icon' />
+          <FaShoppingCart className='cart-icon'
+           onClick={handleShow} 
+           />
         </Nav.Link>
       </div>
     </Navbar>
+
+    <Modal show={show} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Shopping Cart
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h1>Modal body</h1>
+      </Modal.Body>
+      </Modal>  
+
+    </> 
   );
 };
 
