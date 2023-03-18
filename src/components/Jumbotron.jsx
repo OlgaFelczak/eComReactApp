@@ -11,7 +11,10 @@ const HomeJumbotron = () => {
     extra attention to featured<br /> content or information.
   </p>
   <p>
-    <Button bsstyle="primary" className='jumbotronBtn'>Shop now</Button>
+    <Button 
+    // bsstyle="primary" 
+    className='btn-primary jumbotronBtn'
+    >Shop now</Button>
   </p>
 </div>
   )
