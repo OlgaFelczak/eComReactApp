@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 import CartItem from './CartItem';
 
 
-import { useState } from 'react'; 
+import { useState, useEffect } from 'react'; 
 import { CartContext } from './CartContext'; 
 import { useContext } from 'react'; 
 
@@ -24,6 +24,28 @@ const Header = () => {
   
   const cart = useContext(CartContext);
   const productCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
+  const checkout = async () => {
+    await fetch("http://localhost:4000/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({items: cart.items})
+    }).then((response) => {
+      return response.json();
+    }).then((response) => {
+      if(response.url) {
+        window.location.assign(response.url);
+      }
+    })
+  } 
+  // const [items, setItems] = useState([]);
+  // useEffect(() => {
+  //   localStorage.setItem('shoppingCart', JSON.stringify(cart.items));
+  
+  // }, [items]);
+
+
 
   return (
     <> 
@@ -79,9 +101,15 @@ const Header = () => {
         {cart.items.map((currentProduct, idx) => (
           <CartItem key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartItem>
         ) )}
+
+        
           <h1>Total: £{cart.getTotalCost().toFixed(2)}</h1>
 
-          <Button variant='success'>Purchase Items</Button>
+      
+     
+
+
+          <Button variant='success' onClick={checkout}>Purchase Items</Button>
         </>
       :
         <h1>Your cart is empty</h1>  

@@ -1,6 +1,6 @@
 const productsArray = [
   {
-    id: 0,
+    id: "price_1MnMkIAHdwK4regnCKtmUvHX",
     name: "Lipstick",
     href: "#",
     imageSrc: "./public/imageSrcSrcs/lipstick.png",
@@ -10,7 +10,7 @@ const productsArray = [
     price: "4.99",
   },
   {
-    id: 1,
+    id: "price_1MnMm0AHdwK4regnOFLGOPKd",
     name: "Nail polish",
     href: "#",
     imageSrc: "./public/imageSrcSrcs/nailpoilish.png",
@@ -20,7 +20,7 @@ const productsArray = [
     price: "2.99",
   },
   {
-    id: 2,
+    id: "price_1MnMn9AHdwK4regnbRhGMkII",
     name: "Foundation",
     href: "#",
     imageSrc: "./public/imageSrcSrcs/foundation.png",

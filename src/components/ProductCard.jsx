@@ -7,12 +7,15 @@ import Form from 'react-bootstrap/Form';
 import "../styles/productCard.css";
 import { CartContext } from './CartContext';
 import { useContext } from 'react';
+// import { useState, useEffect } from 'react';
 
 function ProductCard(props) {
   const product = props.product; 
   const cart = useContext(CartContext);
   const productQuantity = cart.getProductQuantity(product.id);
   // console.log(cart.items);
+
+  
  
   return (
     <Card className='card'>
