@@ -79,14 +79,13 @@ const Header = () => {
         {cart.items.map((currentProduct, idx) => (
           <CartItem key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartItem>
         ) )}
-          <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+          <h1>Total: £{cart.getTotalCost().toFixed(2)}</h1>
 
           <Button variant='success'>Purchase Items</Button>
         </>
       :
-        <h1>There are no items in your cart</h1>  
+        <h1>Your cart is empty</h1>  
       }
-        {/* <h1>Modal body</h1> */}
       </Modal.Body>
       </Modal>  
 

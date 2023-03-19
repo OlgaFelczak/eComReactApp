@@ -1,7 +1,8 @@
 import React from 'react'
 import ProductCard from './ProductCard'
+import { Row, Col } from 'react-bootstrap'
 // import products from "../products.json"
-// import { productsArray } from "../productsStore";
+import { productsArray } from "../productsStore";
 // import items from "../items.json" 
 // import "../styles/productCard.css"
 
@@ -12,7 +13,13 @@ const LatestProducts = (props) => {
     <div className='container'>
       <h2>Latest Products</h2>
       <div className='row'>
-        
+      <Row xs={1} md={3} className="g-4">
+        {productsArray.map((product, idx) => (
+            <Col align="center" key={idx}>
+            <ProductCard product={product}/>
+           </Col>
+        ))} 
+     </Row>
         {/* <div className='col-sm-3 cardCol'><ProductCard
         image={products[0].image}
         imageAlt={products[0].imageAlt}

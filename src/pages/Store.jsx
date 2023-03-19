@@ -11,9 +11,6 @@ function Store() {
      <Row xs={1} md={3} className="g-4">
         {productsArray.map((product, idx) => (
             <Col align="center" key={idx}>
-            {/* <h2>{product.name}</h2>
-            <p>{product.description}</p>
-            <p>{product.price}</p> */}
             <ProductCard product={product}/>
            </Col>
         ))} 
