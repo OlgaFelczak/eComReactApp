@@ -4,8 +4,15 @@ import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Modal from 'react-bootstrap/Modal'; {/* added by Pawel */}
-import { useState } from 'react'; {/* added by Pawel */}
+import Modal from 'react-bootstrap/Modal'; 
+import CartItem from './CartItem';
+
+
+import { useState } from 'react'; 
+import { CartContext } from './CartContext'; 
+import { useContext } from 'react'; 
+
+
 import { FaShoppingCart, FaUser, FaSearch } from 'react-icons/fa';
 import '../styles/header.css';
 
@@ -13,7 +20,10 @@ const Header = () => {
 
   const [show, setShow] = useState(false);  
   const handleClose = () => setShow(false); 
-  const handleShow = () => setShow(true); 
+  const handleShow = () => setShow(true);
+  
+  const cart = useContext(CartContext);
+  const productCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
 
   return (
     <> 
@@ -52,7 +62,7 @@ const Header = () => {
         <Nav.Link className='cart' href='#action2'>
           <FaShoppingCart className='cart-icon'
            onClick={handleShow} 
-           />
+           />({productCount})
         </Nav.Link>
       </div>
     </Navbar>
@@ -63,7 +73,20 @@ const Header = () => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h1>Modal body</h1>
+        {productCount > 0 ?
+        <>
+        <p>Items in your cart:</p>
+        {cart.items.map((currentProduct, idx) => (
+          <CartItem key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartItem>
+        ) )}
+          <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
+
+          <Button variant='success'>Purchase Items</Button>
+        </>
+      :
+        <h1>There are no items in your cart</h1>  
+      }
+        {/* <h1>Modal body</h1> */}
       </Modal.Body>
       </Modal>  
 
