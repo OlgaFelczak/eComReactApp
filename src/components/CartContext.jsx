@@ -11,21 +11,28 @@ export const CartContext = createContext({
 });
 
 export function CartProvider({ children }) {
+  const [pageInit, setPageInit] = useState(false);
   const [cartProducts, setCartProducts] = useState([]);
 
   // Add data to localStorage
+  useEffect(() => {
+    if (!window.localStorage.getItem('products')) setPageInit(true);
+
+    if (cartProducts && pageInit) {
+      window.localStorage.setItem('products', JSON.stringify(cartProducts));
+    }
+  }, [cartProducts]);
+
   useEffect(() => {
     const localStorageProducts = JSON.parse(
       window.localStorage.getItem('products')
     );
 
-    if (localStorageProducts) setCartProducts(localStorageProducts);
+    if (localStorageProducts) {
+      setCartProducts(localStorageProducts);
+      setPageInit(true);
+    }
   }, []);
-
-  useEffect(() => {
-    if (cartProducts && cartProducts.length !== 0)
-      window.localStorage.setItem('products', JSON.stringify(cartProducts));
-  }, [cartProducts]);
 
   function getProductQuantity(id) {
     const quantity = cartProducts.find(
