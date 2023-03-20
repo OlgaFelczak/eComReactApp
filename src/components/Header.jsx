@@ -45,8 +45,7 @@ const Header = () => {
     <> 
 
     <Navbar className='navBar' expand='lg'>
-      <Navbar.Brand href='#'>
-        <a href='/'>
+      <Navbar.Brand href='/'>
         <img
           src={'/Images/logo.png'}
           width='80'
@@ -54,7 +53,6 @@ const Header = () => {
           className='d-inline-block align-top img-navbar'
           alt='Makeup Junkie logo'
         />
-        </a>
       </Navbar.Brand>
       <h1 className='navbar-title'>Make-Up Junkie</h1>
 {/* 
@@ -75,7 +73,7 @@ const Header = () => {
 
       <Container>
       <Nav.Item>
-        <Nav.Link href="/allproducts">All Products</Nav.Link>
+        <Nav.Link href="/store">Products</Nav.Link>
       </Nav.Item>
       </Container>
 

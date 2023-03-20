@@ -9,7 +9,6 @@ import Cancel from './pages/Cancel';
 import Success from './pages/Success';
 import Store from './pages/Store';
 import CartProvider from './components/CartContext';
-import AllProducts from './pages/AllProducts';
 
 
 const router = createBrowserRouter([
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
   {
     path: "store/",
     element: <Store />,
-  },
-  {
-    path: "allproducts/",
-    element: <AllProducts />,
   },
 ]);
 
