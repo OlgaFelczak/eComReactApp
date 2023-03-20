@@ -11,7 +11,6 @@ const HomeJumbotron = () => {
   </p>
   <p>
     <Button 
-    // bsstyle="primary" 
     className='btn-primary jumbotronBtn'
     >Shop now</Button>
   </p>
