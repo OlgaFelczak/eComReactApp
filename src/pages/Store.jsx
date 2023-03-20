@@ -26,11 +26,9 @@ function Store() {
             <Col align="center" key={idx}>
             <ProductCard product={product}/>
            </Col>
-        ))} 
-     </Row>
-
-     <Row xs={1} md={3} className="g-4">
-     {apiProducts.map((product, idx) => (
+        ))}
+     
+         {apiProducts.map((product, idx) => (
             <Col align="center" key={idx}>
             <APIProducts
              id={product.id}
@@ -42,7 +40,7 @@ function Store() {
             />
            </Col>
         ))} 
-         </Row>
+      </Row>
 
     </>
     )
