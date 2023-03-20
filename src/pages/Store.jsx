@@ -12,6 +12,7 @@ function Store() {
         const responseApiProducts = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=');
         setApiProducts(responseApiProducts.data);
     }
+    
 
     useEffect(() => {
         fetchProducts();
