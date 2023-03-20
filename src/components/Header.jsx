@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Modal from 'react-bootstrap/Modal'; 
@@ -46,6 +46,7 @@ const Header = () => {
 
     <Navbar className='navBar' expand='lg'>
       <Navbar.Brand href='#'>
+        <a href='/'>
         <img
           src={'/Images/logo.png'}
           width='80'
@@ -53,9 +54,10 @@ const Header = () => {
           className='d-inline-block align-top img-navbar'
           alt='Makeup Junkie logo'
         />
+        </a>
       </Navbar.Brand>
       <h1 className='navbar-title'>Make-Up Junkie</h1>
-
+{/* 
       <Container className='search-bar justify-content-end'>
         <Form className='d-flex'>
           <Form.Control
@@ -69,6 +71,12 @@ const Header = () => {
             <FaSearch className='search-icon' />
           </Button>
         </Form>
+      </Container> */}
+
+      <Container>
+      <Nav.Item>
+        <Nav.Link href="/allproducts">All Products</Nav.Link>
+      </Nav.Item>
       </Container>
 
       <div className='links'>
