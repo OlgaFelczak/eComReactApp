@@ -39,12 +39,6 @@ const Header = () => {
       }
     })
   } 
-  // const [items, setItems] = useState([]);
-  // useEffect(() => {
-  //   localStorage.setItem('shoppingCart', JSON.stringify(cart.items));
-  
-  // }, [items]);
-
 
 
   return (
