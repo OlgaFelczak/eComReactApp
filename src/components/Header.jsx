@@ -66,7 +66,9 @@ const Header = () => {
         </Container>
 
         <div className='links'>
-          <Nav.Link className='cart' href='#action2'>
+          <Nav.Link className='cart cartField' 
+          // href='#action2'
+          >
             <FaShoppingCart className='cart-icon' onClick={handleShow} />(
             {productCount})
           </Nav.Link>
