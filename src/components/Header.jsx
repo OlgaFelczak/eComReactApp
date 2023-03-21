@@ -11,7 +11,7 @@ import { useState, useEffect } from 'react';
 import { CartContext } from './CartContext';
 import { useContext } from 'react';
 
-import { FaShoppingCart, FaUser, FaSearch } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa';
 import '../styles/header.css';
 
 const Header = () => {
@@ -55,25 +55,13 @@ const Header = () => {
           />
         </Navbar.Brand>
         <h1 className='navbar-title'>Make-Up Junkie</h1>
-        {/* 
-      <Container className='search-bar justify-content-end'>
-        <Form className='d-flex'>
-          <Form.Control
-            type='search'
-            placeholder='Search'
-            className='search'
-            aria-label='Search'
-          />
-
-          <Button className='btn-search'>
-            <FaSearch className='search-icon' />
-          </Button>
-        </Form>
-      </Container> */}
 
         <Container>
           <Nav.Item>
             <Nav.Link href='/store'>Products</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href='/about'>About</Nav.Link>
           </Nav.Item>
         </Container>
 

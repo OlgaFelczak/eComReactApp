@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Button } from "react-bootstrap";
+import { Confetti } from "../utils/Confetti";
 
 const Success = () => {
     
@@ -7,9 +8,11 @@ const Success = () => {
         JSON.parse(
           !window.localStorage.clear('products')
         );
-    
+        Confetti();
 
       });
+
+      
 
     return (
       <div>
