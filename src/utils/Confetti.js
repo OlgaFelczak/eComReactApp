@@ -1,3 +1,5 @@
+// confetti effect from https://github.com/catdad/canvas-confetti
+
 import confetti from "canvas-confetti";
 
 export const Confetti = () => {
