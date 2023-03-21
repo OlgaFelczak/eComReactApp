@@ -3,30 +3,30 @@ const productsArray = [
     id: "price_1MnMkIAHdwK4regnCKtmUvHX",
     name: "Lipstick",
     href: "#",
-    imageSrc: "./public/imageSrcSrcs/lipstick.png",
+    imageSrc: "/Images/lipstick.png",
     imageAlt: "Picture of Lipstick",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Keep your lip colour between the lines and avoid smudging and feathering your lips",
     price: "4.99",
   },
   {
     id: "price_1MnMm0AHdwK4regnOFLGOPKd",
     name: "Nail polish",
     href: "#",
-    imageSrc: "./public/imageSrcSrcs/nailpoilish.png",
+    imageSrc: "/Images/nailpolish.png",
     imageAlt: "Picture of Nail polish",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Gel Nail Color has a curved brush giving you precision in your application. Achieve rich colour and high shine.",
     price: "2.99",
   },
   {
     id: "price_1MnMn9AHdwK4regnbRhGMkII",
     name: "Foundation",
     href: "#",
-    imageSrc: "./public/imageSrcSrcs/foundation.png",
+    imageSrc: "/Images/foundation.png",
     imageAlt: "Picture of Makeup Foundation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "Up to 24 hours of medium to full matte coverage. Non stop comfort, weightless feel. Resists sweat, water and transfer. No caking, no patchiness.",
     price: "9.99",
   },
 ];

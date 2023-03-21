@@ -28,6 +28,10 @@ h2 {
   font-size: 3rem;
 }
 
+.card-name{
+  font-size: 2rem;
+}
+
 .btn-add-cart{
   background-color: rgb(234, 120, 181);
   border-color: black;
