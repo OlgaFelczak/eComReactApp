@@ -11,7 +11,7 @@ function Links() {
           </a>
         </li>
         <li className='nav-item mb-2'>
-          <a href='#' className='nav-link p-0 text-muted'>
+          <a href='/about' className='nav-link p-0 text-muted'>
             About
           </a>
         </li>
