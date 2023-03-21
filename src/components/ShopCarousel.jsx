@@ -12,8 +12,8 @@ function ShopCarousel() {
           alt='First slide'
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>High-End Beauty Finds</h3>
+          <p>Discover products to elevate your make up game.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -24,8 +24,11 @@ function ShopCarousel() {
           alt='Second slide'
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Transform your eyes with our eyeshadows</h3>
+          <p>
+            Whether you prefer subtle neutrals or bold hues, we've got a shade
+            for you.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -35,9 +38,10 @@ function ShopCarousel() {
           alt='Third slide'
         />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Lips That Pop</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Get your lips looking their best with our selection of lipsticks,
+            lip glosses, and lip liners.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
