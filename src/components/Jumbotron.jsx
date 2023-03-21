@@ -1,21 +1,23 @@
 import Button from 'react-bootstrap/Button';
-import "../styles/jumbotron.css";
+import '../styles/jumbotron.css';
 
 const HomeJumbotron = () => {
   return (
     <div className='jumbotronContainer'>
-  <h1>Welcome to our store</h1>
-  <p>
-    This is a simple hero unit, a simple jumbotron-style <br />component for calling
-    extra attention to featured<br /> content or information.
-  </p>
-  <p>
-    <Button 
-    className='btn-primary jumbotronBtn' href='/store'
-    >Shop now</Button>
-  </p>
-</div>
-  )
-}
+      <h1>Welcome to our store!</h1>
+      <p>
+        We believe that beauty comes from both inside and out. <br />
+        We are excited to offer a carefully curated selection of high-quality
+        make up products that will help you enhance your natural beauty and
+        express your unique style.
+      </p>
+      <p>
+        <Button className='btn-primary jumbotronBtn' href='/store'>
+          Shop now
+        </Button>
+      </p>
+    </div>
+  );
+};
 
-export default HomeJumbotron
+export default HomeJumbotron;

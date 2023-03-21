@@ -1,6 +1,13 @@
 .carouselStyle {
   margin: 1rem !important;
-  /* height: 100px !important; */
+}
+
+.carouselStyle p {
+  font-size: 1.3rem;
+}
+
+.carouselStyle h3 {
+  font-size: 2.2rem;
 }
 
 .imgCarouselStyle {
