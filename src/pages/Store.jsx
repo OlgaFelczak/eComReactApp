@@ -4,6 +4,7 @@ import { productsArray } from "../productsStore";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import APIProducts from '../components/APIProducts';
+import '../styles/store.css'
 
 function Store() {
    const [apiProducts, setApiProducts] = useState([]);
@@ -22,7 +23,7 @@ function Store() {
      
     <>
 
-     <h1 align="center">Welcome to our Store!</h1>
+     <h1 className="store-title" align="center">Welcome to our Store!</h1>
      <Row xs={1} md={3} className="g-4">
         {productsArray.map((product, idx) => (
             <Col align="center" key={idx}>
