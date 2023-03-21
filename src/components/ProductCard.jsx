@@ -19,7 +19,7 @@ function ProductCard(props) {
  
   return (
     <Card className='card'>
-      {/* <Card.Img className='imgStyle' variant="top" src={product.image} alt={product.imageAlt} /> */}
+      <Card.Img className='imgStyle' variant="top" src={product.image} alt={product.imageAlt} />
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>{product.description}</Card.Text>
