@@ -29,5 +29,5 @@
 }
 
 .jumbotronBtn:hover{
-  border-color: white;
+  border-color: white !important;
 }

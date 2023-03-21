@@ -1,6 +1,6 @@
-.cardCol {
-  /* margin: 2px; */
-}
+/* .cardCol {
+  margin: 2px;
+} */
 
 .card {
   width: 300px;
@@ -35,5 +35,5 @@ h2 {
 }
 
 .btn-add-cart:hover{
-  background-color: rgb(236, 132, 188);
+  background-color: rgb(236, 132, 188) !important;
 }

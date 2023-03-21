@@ -3,6 +3,22 @@
   margin-top: -1.5rem;
 }
 
+.form-control:focus{
+  box-shadow: none !important;
+  border: 1px solid black !important;
+}
+
+.btn{
+  background-color: rgb(234, 120, 181) !important;
+  border-color: black !important;
+  font-family:'Times New Roman', Times, serif !important;
+  font-size: 1.1rem !important;
+}
+
+.btn:hover{
+  background-color: rgb(236, 132, 188) !important;
+}
+
 @media (max-width: 576px) {
   .justify-center-on-phone {
     display: flex;
