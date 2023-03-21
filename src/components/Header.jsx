@@ -54,16 +54,20 @@ const Header = () => {
             alt='Makeup Junkie logo'
           />
         </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
         <h1 className='navbar-title'>Make-Up Junkie</h1>
+        <Navbar.Collapse id="basic-navbar-nav">
 
         <Container className='navbar-container'>
-          <Nav.Item className='navBar-link'>
+          <Nav.Item className='navBar-link active'>
             <Nav.Link href='/store'>Products</Nav.Link>
           </Nav.Item>
-          <Nav.Item className='navBar-link'>
+          <Nav.Item className='navBar-link active'>
             <Nav.Link href='/about'>About</Nav.Link>
           </Nav.Item>
         </Container>
+        </Navbar.Collapse>
 
         <div className='links'>
           <Nav.Link className='cart' href='#action2'>
@@ -73,6 +77,7 @@ const Header = () => {
             <FaShoppingCart className='cart-icon' onClick={handleShow} />
           </Nav.Link>
         </div>
+        
       </Navbar>
 
       <Modal show={show} onHide={handleClose}>
