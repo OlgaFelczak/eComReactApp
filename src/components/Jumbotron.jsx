@@ -11,7 +11,7 @@ const HomeJumbotron = () => {
   </p>
   <p>
     <Button 
-    className='btn-primary jumbotronBtn'
+    className='btn-primary jumbotronBtn' href='/store'
     >Shop now</Button>
   </p>
 </div>
