@@ -10,20 +10,17 @@
 
 .jumbotronContainer h1 {
   font-size: 64px;
-  font-family: 'Garamond', Times, serif;
 }
 
 .jumbotronContainer p {
   font-size: 24px;
   padding-top: 18px;
   width: 52%;
-  font-family:'Times New Roman', Times, serif;
 }
 
 .jumbotronBtn {
   height: 42px;
   width: 150px !important;
-  background-color: rgb(234, 120, 181) !important;
   border-color: black ;
   font-size: 1.3rem;
 }

@@ -19,11 +19,11 @@ function ProductCard(props) {
  
   return (
     <Card className='card'>
-      <Card.Img className='imgStyle' variant="top" src={product.image} alt={product.imageAlt} />
+      <Card.Img className='imgStyle' variant="top" src={product.imageSrc} alt={product.imageAlt} />
       <Card.Body>
-        <Card.Title>{product.title}</Card.Title>
-        <Card.Text>{product.description}</Card.Text>
-        <Card.Text>£{product.price}</Card.Text>
+        <Card.Title className='card-name'>{product.name}</Card.Title>
+        {/* <Card.Text>{product.description}</Card.Text> */}
+        <Card.Text className='card-price'>£{product.price}</Card.Text>
         { productQuantity > 0 ?
         
         <>
