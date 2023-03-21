@@ -1,7 +1,7 @@
 import confetti from "canvas-confetti";
 
 export const Confetti = () => {
-  var count = 500;
+  var count = 400;
   var defaults = {
     origin: { y: 0.6 },
   };
