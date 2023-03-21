@@ -1,16 +1,13 @@
 import React from 'react';
 import { BsFacebook, BsInstagram, BsPinterest } from 'react-icons/bs';
+import '../styles/about.css';
 
 function About() {
   return (
     <div>
-      <div
-        className='card text-center py-5 my-5'
-        style={{ width: '80%', border: 'none' }}
-      >
+      <div className='card text-center py-5 my-5'>
         <div>
           <img
-            style={{ width: '100%' }}
             src='../../public/Images/women.png'
             className='card-img-top'
             alt='Photo of us'
@@ -40,17 +37,17 @@ function About() {
           <ul style={{ listStyleType: 'none' }}>
             <li>
               <a className='link-dark' href='https://www.facebook.com/'>
-                <BsFacebook />
+                <BsFacebook color='rgb(236, 132, 188)' fontSize='3em' />
               </a>
             </li>
             <li>
               <a className='link-dark' href='https://www.instagram.com/'>
-                <BsInstagram />
+                <BsInstagram color='rgb(236, 132, 188)' fontSize='3em' />
               </a>
             </li>
             <li>
               <a className='link-dark' href='https://www.pinterest.com/'>
-                <BsPinterest />
+                <BsPinterest color='rgb(236, 132, 188)' fontSize='3em' />
               </a>
             </li>
           </ul>
