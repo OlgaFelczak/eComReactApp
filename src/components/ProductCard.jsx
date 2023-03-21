@@ -23,7 +23,7 @@ function ProductCard(props) {
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>{product.description}</Card.Text>
-        <Card.Text>{product.price}</Card.Text>
+        <Card.Text>£{product.price}</Card.Text>
         { productQuantity > 0 ?
         
         <>
@@ -37,7 +37,7 @@ function ProductCard(props) {
         <Button variant='danger' className='my-2' onClick={() => cart.deleteFromCart(product.id)}>Remove from Cart</Button>
         </> 
         :
-        <Button variant="primary" onClick={() => cart.addOneToCart(product.id)}>Add to Cart</Button>
+        <Button className='btn-add-cart' variant="primary" onClick={() => cart.addOneToCart(product.id)}>Add to Cart</Button>
          }
         
       </Card.Body>

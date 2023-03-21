@@ -5,7 +5,7 @@
   height: 700px;
   padding-top: 136px;
   padding-left: 36px;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .jumbotronContainer h1 {
@@ -25,6 +25,7 @@
   width: 150px !important;
   background-color: rgb(234, 120, 181) !important;
   border-color: black ;
+  font-size: 1.3rem;
 }
 
 .jumbotronBtn:hover{

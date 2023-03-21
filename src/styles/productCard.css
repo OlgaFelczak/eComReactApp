@@ -7,7 +7,7 @@
   min-height: 380px;
   border-width: 1px !important;
   border-radius: 10px !important;
-  /* margin: 1rem !important; */
+  margin-bottom: 4rem !important;
   position: relative;
 }
 
@@ -24,4 +24,16 @@
 
 h2 {
   text-align: center;
+  font-family: 'Garamond', Times, serif;
+  font-size: 3rem;
+}
+
+.btn-add-cart{
+  background-color: rgb(234, 120, 181);
+  border-color: black;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.btn-add-cart:hover{
+  background-color: rgb(236, 132, 188);
 }
