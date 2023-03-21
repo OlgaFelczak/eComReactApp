@@ -12,13 +12,14 @@ function Store() {
         const responseApiProducts = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=');
         setApiProducts(responseApiProducts.data);
     }
-    
 
     useEffect(() => {
         fetchProducts();
     }, [])
-
+   
+    console.log(apiProducts);
     return (
+     
     <>
 
      <h1 align="center">Welcome to our Store!</h1>
@@ -27,9 +28,11 @@ function Store() {
             <Col align="center" key={idx}>
             <ProductCard product={product}/>
            </Col>
-        ))}
-     
-         {apiProducts.map((product, idx) => (
+        ))} 
+     </Row>
+
+     <Row xs={1} md={3} className="g-4">
+     {apiProducts.map((product, idx) => (
             <Col align="center" key={idx}>
             <APIProducts
              id={product.id}
@@ -41,10 +44,10 @@ function Store() {
             />
            </Col>
         ))} 
-      </Row>
+         </Row>
 
     </>
     )
  }
  
- export default Store;  
+ export default Store
