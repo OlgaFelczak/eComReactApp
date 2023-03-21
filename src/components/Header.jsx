@@ -48,29 +48,29 @@ const Header = () => {
         <Navbar.Brand href='/'>
           <img
             src={'/Images/logo.png'}
-            width='80'
-            height='80'
+            width='110'
+            height='110'
             className='d-inline-block align-top img-navbar'
             alt='Makeup Junkie logo'
           />
         </Navbar.Brand>
         <h1 className='navbar-title'>Make-Up Junkie</h1>
 
-        <Container>
-          <Nav.Item>
+        <Container className='navbar-container'>
+          <Nav.Item className='navBar-link'>
             <Nav.Link href='/store'>Products</Nav.Link>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item className='navBar-link'>
             <Nav.Link href='/about'>About</Nav.Link>
           </Nav.Item>
         </Container>
 
         <div className='links'>
-          <Nav.Link className='cart cartField' 
-          // href='#action2'
-          >
-            <FaShoppingCart className='cart-icon' onClick={handleShow} />(
-            {productCount})
+          <Nav.Link className='cart' href='#action2'>
+          <div className='cart-quantity'>
+          {productCount}
+          </div>
+            <FaShoppingCart className='cart-icon' onClick={handleShow} />
           </Nav.Link>
         </div>
       </Navbar>
