@@ -10,7 +10,7 @@ function Store() {
 
   const fetchProducts = async () => {
     return await axios.get(
-      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+      'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
     );
   };
 
@@ -22,10 +22,10 @@ function Store() {
 
   return (
     <>
-      <h1 className="store-title" align="center">
+      <h1 className='store-title' align='center'>
         Welcome to our Store!
       </h1>
-      <Row xs={1} md={3} className="g-4 row-store">
+      <Row xs={1} md={3} className='g-4 row-store'>
         {products?.map((product) => (
           <ProductCard key={product?.id} product={product} />
         ))}

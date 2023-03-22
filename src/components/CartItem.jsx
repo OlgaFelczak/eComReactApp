@@ -12,7 +12,7 @@ function CartItem(props) {
 
   const fetchProducts = async () => {
     return await axios.get(
-      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+      'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
     );
   };
 
@@ -27,7 +27,7 @@ function CartItem(props) {
       <h5>{product.name}</h5>
       <p>{quantity} total</p>
       <p>£{(quantity * product.price).toFixed(2)}</p>
-      <Button size="sm" onClick={() => cart.deleteFromCart(id)}>
+      <Button size='sm' onClick={() => cart.deleteFromCart(id)}>
         Remove from cart
       </Button>
       <hr></hr>
