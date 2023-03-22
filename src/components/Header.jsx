@@ -27,7 +27,7 @@ const Header = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const responseApiProducts = await axios.get(
-        'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+        'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
       );
       setProducts(responseApiProducts.data);
     };
@@ -36,33 +36,33 @@ const Header = () => {
 
   return (
     <>
-      <Navbar className="navBar" expand="lg">
-        <Navbar.Brand href="/">
+      <Navbar className='navBar' expand='lg'>
+        <Navbar.Brand href='/'>
           <img
             src={'/Images/logo.png'}
-            width="110"
-            height="110"
-            className="d-inline-block align-top img-navbar"
-            alt="Makeup Junkie logo"
+            width='110'
+            height='110'
+            className='d-inline-block align-top img-navbar'
+            alt='Makeup Junkie logo'
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
 
-        <h1 className="navbar-title">Make-Up Junkie</h1>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Container className="navbar-container">
-            <Nav.Item className="navBar-link active">
-              <Nav.Link href="/store">Products</Nav.Link>
+        <h1 className='navbar-title'>Make-Up Junkie</h1>
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Container className='navbar-container'>
+            <Nav.Item className='navBar-link active'>
+              <Nav.Link href='/store'>Products</Nav.Link>
             </Nav.Item>
-            <Nav.Item className="navBar-link active">
-              <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Item className='navBar-link active'>
+              <Nav.Link href='/about'>About</Nav.Link>
             </Nav.Item>
           </Container>
 
-          <div className="links">
-            <Nav.Link className="cart" href="#action2">
-              <div className="cart-quantity">{productCount}</div>
-              <FaShoppingCart className="cart-icon" onClick={handleShow} />
+          <div className='links'>
+            <Nav.Link className='cart' href='#action2'>
+              <div className='cart-quantity'>{productCount}</div>
+              <FaShoppingCart className='cart-icon' onClick={handleShow} />
             </Nav.Link>
           </div>
         </Navbar.Collapse>
@@ -97,9 +97,9 @@ const Header = () => {
               <h1>Total: £{cart.getTotalCost(products)}</h1>
 
               <Button
-                variant="success"
+                variant='success'
                 // onClick={checkout}
-                href="/success"
+                href='/success'
               >
                 Purchase Items
               </Button>
