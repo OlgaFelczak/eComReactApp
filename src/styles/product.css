@@ -3,3 +3,25 @@
   max-height: 80vh;
   object-fit: cover;
 }
+/* 
+.product-img {
+  width: 70%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  margin-left: 120px;
+  padding-top: 36px;
+} */
+
+.product-add-cart-btn {
+  margin-left: 174px;
+}
+
+.container p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.product-txt {
+  padding-top: 180px;
+}
