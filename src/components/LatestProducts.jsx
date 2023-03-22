@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import { Row } from 'react-bootstrap';
 import axios from 'axios';
+import "../styles/productCard.css";
 
 const LatestProducts = () => {
   const [products, setProducts] = useState([]);
