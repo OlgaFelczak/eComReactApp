@@ -16,10 +16,10 @@ const Newsletter = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <h5>Sign up to our newsletter!</h5>
-      <p>
+      <p className='text-muted'>
         Millions already enjoy our free emails full of offers & new products.
       </p>
-      <div className='d-flex w-100 gap-2'>
+      <div className='d-flex w-100 gap-2 '>
         <label htmlFor='newsletter1' className='visually-hidden'>
           Email address
         </label>
