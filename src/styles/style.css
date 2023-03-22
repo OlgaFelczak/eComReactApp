@@ -1,20 +1,7 @@
-:root {
-    --titleFont: 'Garamond', Times, serif;
-}
-
 .example::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-h1, h2, h3{
-    font-family: var(--titleFont);
-}
-
-p{
-    font-family:'Times New Roman', Times, serif;
-}
-
-.btn{
-    background-color: rgb(234, 120, 181) !important;
-    font-family:'Times New Roman', Times, serif !important;
+.btn {
+  background-color: rgb(234, 120, 181) !important;
 }
