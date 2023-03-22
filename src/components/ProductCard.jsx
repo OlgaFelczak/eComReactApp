@@ -16,7 +16,7 @@ function ProductCard(props) {
 
   return (
     <Col align="center">
-      <Card className="card">
+      <Card className="card ">
         <Link to={`/product/${product.id}`}>
           <Card.Img
             className="imgStyle"
@@ -27,7 +27,7 @@ function ProductCard(props) {
         </Link>
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
-          <Card.Text>£{product.price}</Card.Text>
+          <Card.Text className='card-price'>£{product.price}</Card.Text>
           {productQuantity > 0 ? (
             <>
               <Form as={Row}>
