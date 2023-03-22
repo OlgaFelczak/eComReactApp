@@ -6,7 +6,7 @@ h2 {
 .card {
   width: 300px;
   min-height: 380px;
-  height: 460px;
+  height: 510px;
   border-width: 1px !important;
   border-radius: 10px !important;
   margin-bottom: 4rem !important;
@@ -36,6 +36,7 @@ h2 {
 
 .card-price {
   font-size: 1.2rem;
+  text-align: center !important;
 }
 
 .btn-add-cart {
@@ -47,15 +48,25 @@ h2 {
   background-color: rgb(236, 132, 188) !important;
 }
 
-
 @media (max-width: 1100px){
     .card{
       width: 100%;
       display: block;
       margin-bottom: 20px;
+      height: 590px;
     }
 
     .card-title{
-      margin-bottom: 3rem;
+      margin-bottom: 6.4rem;
+    }
+
+    .add-cart{
+      margin: 5px;
+    }
+}
+
+@media (max-width: 768px){
+   .card{
+    height: 620px !important;
     }
 }

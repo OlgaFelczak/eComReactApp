@@ -37,14 +37,14 @@ function ProductCard(props) {
                 <Col sm="6">
                   <Button
                     sm="6"
-                    className="mx-2"
+                    className="mx-2 add-cart"
                     onClick={() => cart.addOneToCart(product.id)}
                   >
                     +
                   </Button>
                   <Button
                     sm="6"
-                    className="mx-2"
+                    className="mx-2 add-cart"
                     onClick={() => cart.removeOneFromCart(product.id)}
                   >
                     -
