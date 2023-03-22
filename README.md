@@ -14,6 +14,15 @@ Make-Up Junkie is a responsive e-commerce website of make-up products where the 
 
 ## User Story
 
+AS an online shopper <br>
+I WANT to be able to easily browse products and make a purchase through an intuitive ecommerce app.<br>
+I EXPECT to view detailed product descriptions<br>
+WHEN clicked on the product card.
+ONCE I've selected items to purchase<br>
+I WANT to be able to add them to my cart and view summary of my order with total cost of my order<br>
+AFTER making a purchase<br>
+I EXPECT to be redirected to a page confirming my order
+
 ## Functionality
 
 To access the website click here:
