@@ -12,7 +12,10 @@ const HomeJumbotron = () => {
         express your unique style.
       </p>
       <p>
-        <Button className='btn-primary jumbotronBtn' href='/store'>
+        <Button className='btn-primary jumbotronBtn' 
+        href='/store'
+        // onClick={InjectedCheckoutForm()}
+        >
           Shop now
         </Button>
       </p>

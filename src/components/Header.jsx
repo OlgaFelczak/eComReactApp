@@ -91,9 +91,13 @@ const Header = () => {
 
               <h1>
                 Total: £{async () => (await cart.getTotalCost()).toFixed(2)}
+                
               </h1>
 
-              <Button variant="success" onClick={checkout}>
+              <Button variant="success" 
+              // onClick={checkout}
+              href="/success"
+              >
                 Purchase Items
               </Button>
             </>

@@ -24,12 +24,12 @@ function About() {
           products affordable without compromising on quality. With our
           easy-to-use website and fast shipping, we aim to provide a convenient
           and enjoyable shopping experience for all makeup enthusiasts.
-          <p>
+          {/* <p> */}
             To never miss a deal or update, be sure to sign up for our
             newsletter! And don't forget to check out our social media pages
             below for even more make up tips, product reviews, and
             behind-the-scenes peeks into our company.
-          </p>
+          {/* </p> */}
         </p>
         <div className="d-flex justify-content-evenly">
           <a href="https://www.facebook.com/">
