@@ -22,40 +22,47 @@ const Product = () => {
   const productQuantity = cart.getProductQuantity(product.id);
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-6">
+    <div className='container'>
+      <div className='row'>
+        <div className='col-6'>
           <img
-            className="product-img"
+            className='product-img'
             src={product.image_link}
             alt={product.name}
           />
         </div>
-        <div className="col-6">
+        <div className='col-6'>
+          <div className='row'>
+            <div className='col-2 my-5'>
+              <Button variant='primary' href='/store'>
+                Back
+              </Button>
+            </div>
+          </div>
           <h3>{product.name}</h3>
           <p>{product.description}</p>
-          <div className="row">
-            <div className="col-6">
+          <div className='row'>
+            <div className='col-4'>
               <span>£{product.price}</span>
             </div>
-            <div className="col-6">
+            <div className='col-8'>
               {productQuantity > 0 ? (
                 <>
                   <Form as={Row}>
-                    <Form.Label column="true" sm="6">
+                    <Form.Label column='true' sm='6'>
                       In Cart: {productQuantity}
                     </Form.Label>
-                    <Col sm="6">
+                    <Col sm='6'>
                       <Button
-                        sm="6"
-                        className="mx-2"
+                        sm='6'
+                        className='mx-2'
                         onClick={() => cart.addOneToCart(product.id)}
                       >
                         +
                       </Button>
                       <Button
-                        sm="6"
-                        className="mx-2"
+                        sm='6'
+                        className='mx-2'
                         onClick={() => cart.removeOneFromCart(product.id)}
                       >
                         -
@@ -63,8 +70,8 @@ const Product = () => {
                     </Col>
                   </Form>
                   <Button
-                    variant="danger"
-                    className="my-2"
+                    variant='danger'
+                    className='my-2'
                     onClick={() => cart.deleteFromCart(product.id)}
                   >
                     Remove from Cart
@@ -72,7 +79,7 @@ const Product = () => {
                 </>
               ) : (
                 <Button
-                  variant="primary"
+                  variant='primary'
                   onClick={() => cart.addOneToCart(product.id)}
                 >
                   Add to Cart
