@@ -27,7 +27,7 @@ function ProductCard(props) {
         </Link>
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
-          <Card.Text className='card-price'>£{product.price}</Card.Text>
+          <Card.Text className="card-price">£{product.price}</Card.Text>
           {productQuantity > 0 ? (
             <>
               <Form as={Row}>
@@ -38,7 +38,7 @@ function ProductCard(props) {
                   <Button
                     sm="6"
                     className="mx-2 add-cart"
-                    onClick={() => cart.addOneToCart(product.id)}
+                    onClick={() => cart.addOneToCart(product.id, product.price)}
                   >
                     +
                   </Button>
@@ -62,7 +62,7 @@ function ProductCard(props) {
           ) : (
             <Button
               variant="primary"
-              onClick={() => cart.addOneToCart(product.id)}
+              onClick={() => cart.addOneToCart(product.id, product.price)}
             >
               Add to Cart
             </Button>

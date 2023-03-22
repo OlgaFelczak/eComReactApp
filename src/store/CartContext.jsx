@@ -1,10 +1,10 @@
-import { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 export const CartContext = createContext({
   items: [],
   getProductQuantity: (id) => {},
-  addOneToCart: (id) => {},
+  addOneToCart: (id, price) => {},
   removeOneFromCart: (id) => {},
   deleteFromCart: (id) => {},
   getTotalCost: () => {},
@@ -13,13 +13,6 @@ export const CartContext = createContext({
 export function CartProvider({ children }) {
   const [pageInit, setPageInit] = useState(false);
   const [cartProducts, setCartProducts] = useState([]);
-
-  const fetchProducts = async () => {
-    const responseApiProducts = await axios.get(
-      'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
-    );
-    return responseApiProducts.data;
-  };
 
   useEffect(() => {
     if (!window.localStorage.getItem('products')) setPageInit(true);
@@ -51,7 +44,7 @@ export function CartProvider({ children }) {
     return quantity;
   }
 
-  function addOneToCart(id) {
+  function addOneToCart(id, price) {
     const quantity = getProductQuantity(id);
 
     if (quantity === 0) {
@@ -59,6 +52,7 @@ export function CartProvider({ children }) {
         ...cartProducts,
         {
           id: id,
+          price: price,
           quantity: 1,
         },
       ]);
@@ -97,16 +91,12 @@ export function CartProvider({ children }) {
     }
   }
 
-  async function getTotalCost() {
+  function getTotalCost() {
     let totalCost = 0;
-    let products = await fetchProducts();
+    console.log(cartProducts);
 
     cartProducts.map((cartItem) => {
-      const productData = products.find(
-        (product) => product.id === cartItem.id
-      );
-      console.log(productData);
-      totalCost += productData.price * cartItem.quantity;
+      totalCost += parseFloat(cartItem.price) * cartItem.quantity;
     });
 
     return totalCost;

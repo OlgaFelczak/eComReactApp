@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -10,8 +10,10 @@ import { CartContext } from '../store/CartContext';
 import { useContext } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import '../styles/header.css';
+import axios from 'axios';
 
 const Header = () => {
+  const [products, setProducts] = useState([]);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -21,6 +23,16 @@ const Header = () => {
     (sum, product) => sum + product.quantity,
     0
   );
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const responseApiProducts = await axios.get(
+        'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+      );
+      setProducts(responseApiProducts.data);
+    };
+    fetchProducts();
+  }, []);
 
   return (
     <>
@@ -47,14 +59,13 @@ const Header = () => {
             </Nav.Item>
           </Container>
 
-        <div className="links">
-          <Nav.Link className="cart" href="#action2">
-            <div className="cart-quantity">{productCount}</div>
-            <FaShoppingCart className="cart-icon" onClick={handleShow} />
-          </Nav.Link>
-        </div>
+          <div className="links">
+            <Nav.Link className="cart" href="#action2">
+              <div className="cart-quantity">{productCount}</div>
+              <FaShoppingCart className="cart-icon" onClick={handleShow} />
+            </Nav.Link>
+          </div>
         </Navbar.Collapse>
-
       </Navbar>
 
       <Modal show={show} onHide={handleClose}>
@@ -65,22 +76,30 @@ const Header = () => {
           {productCount > 0 ? (
             <>
               <p>Items in your cart:</p>
-              {cart.items?.map((currentProduct) => (
-                <CartItem
-                  key={currentProduct.id}
-                  id={currentProduct.id}
-                  quantity={currentProduct.quantity}
-                ></CartItem>
-              ))}
+              {cart.items?.map((currentProduct) => {
+                const product = products.find(
+                  (prd) => prd.id === currentProduct.id
+                );
 
-              <h1>
-                Total: £{async () => (await cart.getTotalCost()).toFixed(2)}
-                
-              </h1>
+                if (product) {
+                  return (
+                    <CartItem
+                      key={product.id}
+                      id={product.id}
+                      quantity={currentProduct.quantity}
+                      name={product.name}
+                      price={product.price}
+                    ></CartItem>
+                  );
+                }
+              })}
 
-              <Button variant="success" 
-            
-              href="/success"
+              <h1>Total: £{cart.getTotalCost(products)}</h1>
+
+              <Button
+                variant="success"
+                // onClick={checkout}
+                href="/success"
               >
                 Purchase Items
               </Button>
