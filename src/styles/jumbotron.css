@@ -31,8 +31,9 @@
 
 @media (max-width: 576px){
   .jumbotronContainer {
-    height: 980px;
+    height: 990px;
     color: white;
     text-shadow: 1px 1px 2px #000;
+    margin-top: 2rem;
   }
 }

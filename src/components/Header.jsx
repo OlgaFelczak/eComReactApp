@@ -63,7 +63,6 @@ const Header = () => {
               <Nav.Link href="/about">About</Nav.Link>
             </Nav.Item>
           </Container>
-        </Navbar.Collapse>
 
         <div className="links">
           <Nav.Link className="cart" href="#action2">
@@ -71,6 +70,8 @@ const Header = () => {
             <FaShoppingCart className="cart-icon" onClick={handleShow} />
           </Nav.Link>
         </div>
+        </Navbar.Collapse>
+
       </Navbar>
 
       <Modal show={show} onHide={handleClose}>

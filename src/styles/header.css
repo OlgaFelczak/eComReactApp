@@ -17,21 +17,13 @@
   justify-content: flex-end !important;
 }
 
-.basic-navbar-nav {
-  margin: 2rem !important;
-}
-
 .navBar-link {
-  margin-right: 1rem;
+  margin-right: 2rem;
   font-size: 1.7rem;
 }
 
 .navBar-link:hover {
   color: rgb(236, 132, 188);
-}
-
-.navbar-link.active {
-  color: red !important;
 }
 
 .links {
@@ -46,4 +38,21 @@
 
 .cart-quantity {
   padding-left: 1rem;
+}
+
+@media (max-width: 576px){
+  .navbar-container{
+    justify-content: center !important;
+    margin-top: 2rem;
+  }
+
+  .navbar-title{
+    text-align: center;
+  }
+
+  .links{
+    position: absolute;
+    right: -15px;
+    top: 12rem;
+  }
 }
