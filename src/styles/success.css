@@ -1,5 +1,22 @@
 .success-body {
   text-align: center;
-  margin-top: 36px;
+  margin-top: 24px;
   margin-bottom: 36px;
+}
+
+.success-p {
+  font-style: italic;
+  padding-top: 2px;
+}
+
+.success-body p {
+  font-weight: 500;
+}
+
+.success-p2 {
+  margin-top: 32px;
+}
+
+.success-btn {
+  margin-top: 12px;
 }

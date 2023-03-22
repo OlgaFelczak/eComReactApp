@@ -12,13 +12,13 @@ const Success = () => {
 
   return (
     <div className='success-body'>
-      <h1>Thank You For Your Purchase.</h1>
-      <p>Check your email for the receipt</p>
-      <p>
+      <h1>Thank You For Your Purchase</h1>
+      <p className='success-p'>Check your email for the receipt</p>
+      <p className='success-p2'>
         If you need any help with your purchase please email us: {' '}
         <a href="mailto:contact@mj.com">contact@mj.com</a>
       </p>
-      <Button href="/">Continue Shopping</Button>
+      <Button href="/" className='success-btn'>Continue Shopping</Button>
     </div>
   );
 };
