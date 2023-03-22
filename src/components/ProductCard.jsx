@@ -27,7 +27,6 @@ function ProductCard(props) {
         </Link>
         <Card.Body>
           <Card.Title>{product.name}</Card.Title>
-          <Card.Text>{product.description}</Card.Text>
           <Card.Text>£{product.price}</Card.Text>
           {productQuantity > 0 ? (
             <>
