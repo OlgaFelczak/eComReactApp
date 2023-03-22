@@ -1,54 +1,37 @@
-import { Row, Col } from "react-bootstrap";
-import ProductCard from "../components/ProductCard";     
-import { productsArray } from "../productsStore";
-import { useState, useEffect } from 'react';
+import { Row } from 'react-bootstrap';
+import ProductCard from '../components/ProductCard';
+import { useEffect, useState } from 'react';
+import '../styles/store.css';
+import React from 'react';
 import axios from 'axios';
-import APIProducts from '../components/APIProducts';
-import '../styles/store.css'
 
 function Store() {
-   const [apiProducts, setApiProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
-    const fetchProducts = async () => {
-        const responseApiProducts = await axios.get('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=');
-        setApiProducts(responseApiProducts.data);
-    }
+  const fetchProducts = async () => {
+    return await axios.get(
+      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+    );
+  };
 
-    useEffect(() => {
-        fetchProducts();
-    }, [])
-   
-    console.log(apiProducts);
-    return (
-     
+  useEffect(() => {
+    fetchProducts().then((res) => {
+      setProducts(res.data);
+    });
+  }, []);
+
+  return (
     <>
-
-     <h1 className="store-title" align="center">Welcome to our Store!</h1>
-     <Row xs={1} md={3} className="g-4">
-        {productsArray.map((product, idx) => (
-            <Col align="center" key={idx}>
-            <ProductCard product={product}/>
-           </Col>
-        ))} 
-     </Row>
-
-     <Row xs={1} md={3} className="g-4">
-     {apiProducts.map((product, idx) => (
-            <Col align="center" key={idx}>
-            <APIProducts
-             id={product.id}
-             key={product.id}
-             name={product.name}
-             src={product.image_link}
-             price={product.price}
-             description={product.description}
-            />
-           </Col>
-        ))} 
-         </Row>
-
+      <h1 className="store-title" align="center">
+        Welcome to our Store!
+      </h1>
+      <Row xs={1} md={3} className="g-4">
+        {products?.map((product) => (
+          <ProductCard key={product?.id} product={product} />
+        ))}
+      </Row>
     </>
-    )
- }
- 
- export default Store
+  );
+}
+
+export default Store;

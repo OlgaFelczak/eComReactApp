@@ -1,61 +1,35 @@
-import React from 'react'
-import ProductCard from './ProductCard'
-import { Row, Col } from 'react-bootstrap'
-// import products from "../products.json"
-import { productsArray } from "../productsStore";
-// import items from "../items.json" 
-// import "../styles/productCard.css"
+import React, { useEffect, useState } from 'react';
+import ProductCard from './ProductCard';
+import { Row } from 'react-bootstrap';
+import axios from 'axios';
 
+const LatestProducts = () => {
+  const [products, setProducts] = useState([]);
 
+  const fetchProducts = async () => {
+    return await axios.get(
+      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+    );
+  };
 
-const LatestProducts = (props) => {
+  useEffect(() => {
+    fetchProducts().then((res) => {
+      setProducts(res.data.slice(0, 3));
+    });
+  }, []);
+
   return (
-    <div className='container'>
+    <div className="container">
       <h2>Latest Products</h2>
-      <div className='row'>
-      <Row xs={1} md={3} className="g-4">
-        {productsArray.map((product, idx) => (
-            <Col align="center" key={idx}>
-            <ProductCard product={product}/>
-           </Col>
-        ))} 
-     </Row>
-        {/* <div className='col-sm-3 cardCol'><ProductCard
-        image={products[0].image}
-        imageAlt={products[0].imageAlt}
-        title={products[0].title}
-        description={products[0].description}
-        price={products[0].price}
-        />
-        </div> */}
-        {/* <div className='col-sm-3 cardCol'><ProductCard
-        image={products[1].image}
-        imageAlt={products[1].imageAlt}
-        title={products[1].title}
-        description={products[1].description}
-        price={products[1].price}
-        /></div>
-        <div className='col-sm-3 cardCol'><ProductCard
-        image={products[2].image}
-        imageAlt={products[2].imageAlt}
-        title={products[2].title}
-        description={products[2].description}
-        price={products[2].price}
-        /></div>
-        <div className='col-sm-3 cardCol'><ProductCard
-        image={products[3].image}
-        imageAlt={products[3].imageAlt}
-        title={products[3].title}
-        description={products[3].description}
-        price={products[3].price}
-        />
-        </div> */}
+      <div className="row">
+        <Row xs={1} md={3} className="g-4">
+          {products?.map((product) => (
+            <ProductCard product={product} key={product.id} />
+          ))}
+        </Row>
       </div>
     </div>
-
-    
-  )
-}
+  );
+};
 
 export default LatestProducts;
-

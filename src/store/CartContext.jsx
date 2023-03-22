@@ -1,12 +1,12 @@
 import { createContext, useState, useEffect } from 'react';
-import { getProductData } from '../productsStore';
+import axios from 'axios';
 
 export const CartContext = createContext({
   items: [],
-  getProductQuantity: () => {},
-  addOneToCart: () => {},
-  removeOneFromCart: () => {},
-  deleteFromCart: () => {},
+  getProductQuantity: (id) => {},
+  addOneToCart: (id) => {},
+  removeOneFromCart: (id) => {},
+  deleteFromCart: (id) => {},
   getTotalCost: () => {},
 });
 
@@ -14,7 +14,13 @@ export function CartProvider({ children }) {
   const [pageInit, setPageInit] = useState(false);
   const [cartProducts, setCartProducts] = useState([]);
 
-  // Add data to localStorage
+  const fetchProducts = async () => {
+    const responseApiProducts = await axios.get(
+      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+    );
+    return responseApiProducts.data;
+  };
+
   useEffect(() => {
     if (!window.localStorage.getItem('products')) setPageInit(true);
 
@@ -91,10 +97,15 @@ export function CartProvider({ children }) {
     }
   }
 
-  function getTotalCost() {
+  async function getTotalCost() {
     let totalCost = 0;
+    let products = await fetchProducts();
+
     cartProducts.map((cartItem) => {
-      const productData = getProductData(cartItem.id);
+      const productData = products.find(
+        (product) => product.id === cartItem.id
+      );
+      console.log(productData);
       totalCost += productData.price * cartItem.quantity;
     });
 

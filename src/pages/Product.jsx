@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router';
 import '../styles/product.css';
 import axios from 'axios';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import { CartContext } from '../store/CartContext';
 
 export async function loader({ params }) {
   const { data: products } = await axios.get(
@@ -12,28 +17,67 @@ export async function loader({ params }) {
 
 const Product = () => {
   const product = useLoaderData();
+  const cart = useContext(CartContext);
+  console.log(product);
+  const productQuantity = cart.getProductQuantity(product.id);
 
   return (
-    <div className='container'>
-      <div className='row'>
-        <div className='col-6'>
+    <div className="container">
+      <div className="row">
+        <div className="col-6">
           <img
-            className='product-img'
+            className="product-img"
             src={product.image_link}
             alt={product.name}
           />
         </div>
-        <div className='col-6'>
+        <div className="col-6">
           <h3>{product.name}</h3>
           <p>{product.description}</p>
-          <div className='row'>
-            <div className='col-6'>
+          <div className="row">
+            <div className="col-6">
               <span>{product.price}</span>
             </div>
-            <div className='col-6'>
-              <button type='button' className='btn btn-primary'>
-                Add to Cart
-              </button>
+            <div className="col-6">
+              {productQuantity > 0 ? (
+                <>
+                  <Form as={Row}>
+                    <Form.Label column="true" sm="6">
+                      In Cart: {productQuantity}
+                    </Form.Label>
+                    <Col sm="6">
+                      <Button
+                        sm="6"
+                        className="mx-2"
+                        onClick={() => cart.addOneToCart(product.id)}
+                      >
+                        +
+                      </Button>
+                      <Button
+                        sm="6"
+                        className="mx-2"
+                        onClick={() => cart.removeOneFromCart(product.id)}
+                      >
+                        -
+                      </Button>
+                    </Col>
+                  </Form>
+                  <Button
+                    variant="danger"
+                    className="my-2"
+                    onClick={() => cart.deleteFromCart(product.id)}
+                  >
+                    Remove from Cart
+                  </Button>
+                </>
+              ) : (
+                <Button
+                  variant="primary"
+                  onClick={() => cart.addOneToCart(product.id)}
+                >
+                  Add to Cart
+                </Button>
+              )}
             </div>
           </div>
         </div>

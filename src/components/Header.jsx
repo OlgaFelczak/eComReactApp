@@ -1,16 +1,13 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Modal from 'react-bootstrap/Modal';
 import CartItem from './CartItem';
-
-import { useState, useEffect } from 'react';
-import { CartContext } from './CartContext';
+import { useState } from 'react';
+import { CartContext } from '../store/CartContext';
 import { useContext } from 'react';
-
 import { FaShoppingCart } from 'react-icons/fa';
 import '../styles/header.css';
 
@@ -44,40 +41,36 @@ const Header = () => {
 
   return (
     <>
-      <Navbar className='navBar' expand='lg'>
-        <Navbar.Brand href='/'>
+      <Navbar className="navBar" expand="lg">
+        <Navbar.Brand href="/">
           <img
             src={'/Images/logo.png'}
-            width='110'
-            height='110'
-            className='d-inline-block align-top img-navbar'
-            alt='Makeup Junkie logo'
+            width="110"
+            height="110"
+            className="d-inline-block align-top img-navbar"
+            alt="Makeup Junkie logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
-        <h1 className='navbar-title'>Make-Up Junkie</h1>
+        <h1 className="navbar-title">Make-Up Junkie</h1>
         <Navbar.Collapse id="basic-navbar-nav">
-
-        <Container className='navbar-container'>
-          <Nav.Item className='navBar-link active'>
-            <Nav.Link href='/store'>Products</Nav.Link>
-          </Nav.Item>
-          <Nav.Item className='navBar-link active'>
-            <Nav.Link href='/about'>About</Nav.Link>
-          </Nav.Item>
-        </Container>
+          <Container className="navbar-container">
+            <Nav.Item className="navBar-link active">
+              <Nav.Link href="/store">Products</Nav.Link>
+            </Nav.Item>
+            <Nav.Item className="navBar-link active">
+              <Nav.Link href="/about">About</Nav.Link>
+            </Nav.Item>
+          </Container>
         </Navbar.Collapse>
 
-        <div className='links'>
-          <Nav.Link className='cart' href='#action2'>
-          <div className='cart-quantity'>
-          {productCount}
-          </div>
-            <FaShoppingCart className='cart-icon' onClick={handleShow} />
+        <div className="links">
+          <Nav.Link className="cart" href="#action2">
+            <div className="cart-quantity">{productCount}</div>
+            <FaShoppingCart className="cart-icon" onClick={handleShow} />
           </Nav.Link>
         </div>
-        
       </Navbar>
 
       <Modal show={show} onHide={handleClose}>
@@ -88,17 +81,19 @@ const Header = () => {
           {productCount > 0 ? (
             <>
               <p>Items in your cart:</p>
-              {cart.items.map((currentProduct, idx) => (
+              {cart.items?.map((currentProduct) => (
                 <CartItem
-                  key={idx}
+                  key={currentProduct.id}
                   id={currentProduct.id}
                   quantity={currentProduct.quantity}
                 ></CartItem>
               ))}
 
-              <h1>Total: £{cart.getTotalCost().toFixed(2)}</h1>
+              <h1>
+                Total: £{async () => (await cart.getTotalCost()).toFixed(2)}
+              </h1>
 
-              <Button variant='success' onClick={checkout}>
+              <Button variant="success" onClick={checkout}>
                 Purchase Items
               </Button>
             </>
