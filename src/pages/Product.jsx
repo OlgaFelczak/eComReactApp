@@ -36,7 +36,7 @@ const Product = () => {
           <p>{product.description}</p>
           <div className="row">
             <div className="col-6">
-              <span>{product.price}</span>
+              <span>£{product.price}</span>
             </div>
             <div className="col-6">
               {productQuantity > 0 ? (
