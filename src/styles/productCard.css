@@ -26,6 +26,7 @@ h2 {
 
 .card-title {
   height: 48px;
+  margin-bottom: 2.5rem;
 }
 
 .card-name {
@@ -52,5 +53,9 @@ h2 {
       width: 100%;
       display: block;
       margin-bottom: 20px;
+    }
+
+    .card-title{
+      margin-bottom: 3rem;
     }
 }
