@@ -18,7 +18,7 @@
 
 ## Technologies Used
 
-[![My Skills](https://skills.thijs.gg/icons?i=react&theme=dark)](https://en.wikipedia.org/wiki/Reacts)
+[![My Skills](https://skills.thijs.gg/icons?i=react&theme=dark)](https://en.wikipedia.org/wiki/React)
 [![My Skills](https://skills.thijs.gg/icons?i=html&theme=dark)](https://en.wikipedia.org/wiki/HTML)
 [![My Skills](https://skills.thijs.gg/icons?i=css&theme=dark)](https://en.wikipedia.org/wiki/CSS)
 [![My Skills](https://skills.thijs.gg/icons?i=javascript&theme=dark)](https://en.wikipedia.org/wiki/JavaScript)
