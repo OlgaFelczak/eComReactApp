@@ -1,11 +1,13 @@
-/* .example::-webkit-scrollbar {
-  display: none;
-} */
-
 ::-webkit-scrollbar {
   display: none;
 }
 
 .btn {
   background-color: rgb(234, 120, 181) !important;
+  border-color: black !important;
+  font-size: 1.1rem !important;
+}
+
+.btn:hover{
+  background-color: rgb(236, 132, 188) !important;
 }

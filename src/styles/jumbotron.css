@@ -21,12 +21,7 @@
 .jumbotron-btn {
   height: 42px;
   width: 150px !important;
-  border-color: black;
   font-size: 1.3rem;
-}
-
-.jumbotronBtn:hover {
-  border-color: white !important;
 }
 
 @media (max-width: 576px) {
