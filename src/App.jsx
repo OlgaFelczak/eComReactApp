@@ -27,10 +27,6 @@ const router = createBrowserRouter([
     loader: productLoader,
   },
   {
-    path: 'cancel/',
-    element: <Cancel />,
-  },
-  {
     path: 'success/',
     element: <Success />,
   },
