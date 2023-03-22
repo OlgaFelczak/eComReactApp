@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import { Row } from 'react-bootstrap';
 import axios from 'axios';
-import "../styles/productCard.css";
+import '../styles/productCard.css';
 
 const LatestProducts = () => {
   const [products, setProducts] = useState([]);
 
   const fetchProducts = async () => {
     return await axios.get(
-      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+      'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
     );
   };
 
@@ -20,10 +20,10 @@ const LatestProducts = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className='container'>
       <h2>Latest Products</h2>
-      <div className="row">
-        <Row xs={1} md={3} className="g-4">
+      <div className='row'>
+        <Row xs={1} md={3} className='g-4'>
           {products?.map((product) => (
             <ProductCard product={product} key={product.id} />
           ))}

@@ -10,7 +10,7 @@ import { CartContext } from '../store/CartContext';
 
 export async function loader({ params }) {
   const { data: products } = await axios.get(
-    'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+    'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
   );
   return products.find((product) => product.id === parseInt(params.productId));
 }

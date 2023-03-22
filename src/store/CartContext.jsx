@@ -16,7 +16,7 @@ export function CartProvider({ children }) {
 
   const fetchProducts = async () => {
     const responseApiProducts = await axios.get(
-      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
+      'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type='
     );
     return responseApiProducts.data;
   };
