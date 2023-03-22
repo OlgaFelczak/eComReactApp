@@ -25,7 +25,7 @@ function Store() {
       <h1 className="store-title" align="center">
         Welcome to our Store!
       </h1>
-      <Row xs={1} md={3} className="g-4">
+      <Row xs={1} md={3} className="g-4 row-store">
         {products?.map((product) => (
           <ProductCard key={product?.id} product={product} />
         ))}
