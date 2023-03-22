@@ -6,13 +6,13 @@ function About() {
     <div>
       <div>
         <img
-          src="../../public/Images/women.png"
-          className="card-img-top"
-          alt="Photo of us"
+          src='../../public/Images/women.png'
+          className='card-img-top'
+          alt='Photo of us'
         />
       </div>
 
-      <div className="container mt-3">
+      <div className='container mt-3'>
         <h5>About Us</h5>
         <p>
           Our small company specialises in providing high-quality makeup
@@ -25,21 +25,21 @@ function About() {
           easy-to-use website and fast shipping, we aim to provide a convenient
           and enjoyable shopping experience for all makeup enthusiasts.
           {/* <p> */}
-            To never miss a deal or update, be sure to sign up for our
-            newsletter! And don't forget to check out our social media pages
-            below for even more make up tips, product reviews, and
-            behind-the-scenes peeks into our company.
+          To never miss a deal or update, be sure to sign up for our newsletter!
+          And don't forget to check out our social media pages below for even
+          more make up tips, product reviews, and behind-the-scenes peeks into
+          our company.
           {/* </p> */}
         </p>
-        <div className="d-flex justify-content-evenly">
-          <a href="https://www.facebook.com/">
-            <BsFacebook color="rgb(236, 132, 188)" fontSize="3em" />
+        <div className='d-flex justify-content-evenly'>
+          <a href='https://www.facebook.com/' target='_blank'>
+            <BsFacebook color='rgb(236, 132, 188)' fontSize='3em' />
           </a>
-          <a href="https://www.instagram.com/">
-            <BsInstagram color="rgb(236, 132, 188)" fontSize="3em" />
+          <a href='https://www.instagram.com/' target='_blank'>
+            <BsInstagram color='rgb(236, 132, 188)' fontSize='3em' />
           </a>
-          <a href="https://www.pinterest.com/">
-            <BsPinterest color="rgb(236, 132, 188)" fontSize="3em" />
+          <a href='https://www.pinterest.com/' target='_blank'>
+            <BsPinterest color='rgb(236, 132, 188)' fontSize='3em' />
           </a>
         </div>
       </div>
