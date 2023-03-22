@@ -1,4 +1,4 @@
-.jumbotronContainer {
+.jumbotron-container {
   background-image: url(/Images/jumbotronpic.png);
   background-position: center;
   background-size: cover;
@@ -8,29 +8,29 @@
   margin-bottom: 4rem;
 }
 
-.jumbotronContainer h1 {
+.jumbotron-container h1 {
   font-size: 64px;
 }
 
-.jumbotronContainer p {
+.jumbotron-container p {
   font-size: 24px;
   padding-top: 18px;
   width: 52%;
 }
 
-.jumbotronBtn {
+.jumbotron-btn {
   height: 42px;
   width: 150px !important;
-  border-color: black ;
+  border-color: black;
   font-size: 1.3rem;
 }
 
-.jumbotronBtn:hover{
+.jumbotronBtn:hover {
   border-color: white !important;
 }
 
-@media (max-width: 576px){
-  .jumbotronContainer {
+@media (max-width: 576px) {
+  .jumbotron-container {
     height: 990px;
     color: white;
     text-shadow: 1px 1px 2px #000;

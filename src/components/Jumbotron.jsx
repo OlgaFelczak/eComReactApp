@@ -3,7 +3,7 @@ import '../styles/jumbotron.css';
 
 const HomeJumbotron = () => {
   return (
-    <div className='jumbotronContainer'>
+    <div className='jumbotron-container'>
       <h1>Welcome to our store!</h1>
       <p>
         We believe that beauty comes from both inside and out. <br />
@@ -12,9 +12,10 @@ const HomeJumbotron = () => {
         express your unique style.
       </p>
       <p>
-        <Button className='btn-primary jumbotronBtn' 
-        href='/store'
-        // onClick={InjectedCheckoutForm()}
+        <Button
+          className='btn-primary jumbotron-btn'
+          href='/store'
+          // onClick={InjectedCheckoutForm()}
         >
           Shop now
         </Button>
