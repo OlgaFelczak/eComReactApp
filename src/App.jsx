@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Product, { loader as productLoader } from './pages/Product';
 import About from './pages/About';
-import Cancel from './pages/Cancel';
 import Success from './pages/Success';
 import Store from './pages/Store';
 import CartProvider from './store/CartContext';

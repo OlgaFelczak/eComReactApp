@@ -18,7 +18,6 @@ export async function loader({ params }) {
 const Product = () => {
   const product = useLoaderData();
   const cart = useContext(CartContext);
-  console.log(product);
   const productQuantity = cart.getProductQuantity(product.id);
 
   return (
