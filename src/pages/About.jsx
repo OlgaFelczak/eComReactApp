@@ -13,7 +13,7 @@ function About() {
       </div>
 
       <div className='container mt-3'>
-        <h5>About Us</h5>
+        <h2 className='py-4 '>About Us</h2>
         <p>
           Our small company specialises in providing high-quality makeup
           products through our online shop. We offer a wide range of products
@@ -24,14 +24,15 @@ function About() {
           products affordable without compromising on quality. With our
           easy-to-use website and fast shipping, we aim to provide a convenient
           and enjoyable shopping experience for all makeup enthusiasts.
-          {/* <p> */}
+          <br />
+        </p>
+        <p>
           To never miss a deal or update, be sure to sign up for our newsletter!
           And don't forget to check out our social media pages below for even
           more make up tips, product reviews, and behind-the-scenes peeks into
           our company.
-          {/* </p> */}
         </p>
-        <div className='d-flex justify-content-evenly'>
+        <div className='d-flex justify-content-evenly py-5'>
           <a href='https://www.facebook.com/' target='_blank'>
             <BsFacebook color='rgb(236, 132, 188)' fontSize='3em' />
           </a>
