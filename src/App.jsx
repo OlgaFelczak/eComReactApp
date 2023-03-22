@@ -10,7 +10,7 @@ import Success from './pages/Success';
 import Store from './pages/Store';
 import CartProvider from './store/CartContext';
 import ProductsProvider from './store/ProductsContext';
-import './styles/style.css';
+import './styles/app.css';
 
 const router = createBrowserRouter([
   {
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <ProductsProvider>
         <CartProvider>
           <Header />
