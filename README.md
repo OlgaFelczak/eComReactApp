@@ -14,20 +14,24 @@ Make-Up Junkie is a responsive e-commerce website of make-up products where the 
 
 ## User Story
 
-AS an online shopper <br>
-I WANT to be able to easily browse products and make a purchase through an intuitive ecommerce app.<br>
-I EXPECT to view detailed product descriptions<br>
-WHEN clicked on the product card.
-ONCE I've selected items to purchase<br>
-I WANT to be able to add them to my cart and view summary of my order with total cost of my order<br>
-AFTER making a purchase<br>
-I EXPECT to be redirected to a page confirming my order
+As an online shopper <br>
+I want to be able to easily browse products and make a purchase through an intuitive ecommerce app.<br>
+I expect to view detailed product descriptions<br>
+when clicked on the product.<br>
+Once I've selected items to purchase<br>
+I want to be able to add them to my cart and view summary of my order with total cost of my order displayed<br>
+After making a purchase<br>
+I expect to be redirected to a page confirming my order
 
 ## Functionality
 
 To access the website click here:
 
 ## Installation
+
+After opening this url: https://rococo-moxie-c67f22.netlify.app/ <br>
+you should see this in your browser:
+![Make-up Junkie](./public/Images/screenshot.png)
 
 ## Technologies Used
 
