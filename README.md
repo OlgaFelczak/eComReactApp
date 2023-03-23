@@ -16,8 +16,9 @@ Make-Up Junkie is a responsive e-commerce website of make-up products where the 
 **[Functionality](#functionality)**<br>
 **[Installation](#installation)**<br>
 **[Usage](#usage)**<br>
-**[Technologies Used](#technologies-used)**<br>
+**[Technologies & Packages Used](#technologies-used)**<br>
 **[API Reference](#api-reference)**<br>
+**[Resources](#resources)**<br>
 **[Authors](#authors)**<br>
 **[Contributing](#contributing)**<br>
 **[License](#license)**<br>
@@ -72,20 +73,29 @@ After opening this url:<br> https://rococo-moxie-c67f22.netlify.app/ <br>
 you should see this in your browser:
 ![Make-up Junkie](./public/Images/screenshot.png)
 
-## Technologies Used
+## Technologies & Packages Used
 
 This project was built using [Node v18.x](https://nodejs.org/en) and uses following technologies: <br>
 
 [Vite.js](https://vitejs.dev/) - for setting up development <br>
 [Yarn](https://classic.yarnpkg.com/en/) - for dependency management <br>
 [React.js](https://react.dev/) - for building the application <br>
-[React Bootstrap](https://react-bootstrap.github.io/) - framework for styling
+[React Bootstrap](https://react-bootstrap.github.io/) - framework for styling <br>
+[API](https://en.wikipedia.org/wiki/API) - for store items <br>
+[Confetti React Component](https://github.com/ulitcos/react-canvas-confetti) - for confetti effect after purchase <br>
+[Create Context](https://legacy.reactjs.org/docs/context.html) - for shopping cart functionality <br>
+[React Hook Form](https://react-hook-form.com/) - for the newsletter functionality <br>
+[React Icons](https://react-icons.github.io/react-icons/) - for all icons <br>
 
 ## API Reference
 
 All shop items were generated using the following API:
 
 https://rapidapi.com/brianiswu/api/makeup/ <br>
+
+## Resources
+
+Photos downloaded from https://www.pexels.com/
 
 ## Authors
 
