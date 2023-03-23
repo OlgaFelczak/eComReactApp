@@ -3,6 +3,7 @@ import ProductCard from './ProductCard';
 import { Row } from 'react-bootstrap';
 import axios from 'axios';
 import '../styles/productCard.css';
+import '../styles/latestProducts.css';
 
 const LatestProducts = () => {
   const [products, setProducts] = useState([]);
@@ -22,7 +23,7 @@ const LatestProducts = () => {
   return (
     <div className='container'>
       <h2>Latest Products</h2>
-      <div className='row'>
+      <div className='row latest-products'>
         <Row xs={1} md={3} className='g-4'>
           {products?.map((product) => (
             <ProductCard product={product} key={product.id} />
