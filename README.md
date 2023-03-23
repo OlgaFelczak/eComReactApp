@@ -1,3 +1,9 @@
+[![My Skills](https://skills.thijs.gg/icons?i=react&theme=dark)](https://en.wikipedia.org/wiki/React)
+[![My Skills](https://skills.thijs.gg/icons?i=html&theme=dark)](https://en.wikipedia.org/wiki/HTML)
+[![My Skills](https://skills.thijs.gg/icons?i=css&theme=dark)](https://en.wikipedia.org/wiki/CSS)
+[![My Skills](https://skills.thijs.gg/icons?i=javascript&theme=dark)](https://en.wikipedia.org/wiki/JavaScript)
+[![My Skills](https://skills.thijs.gg/icons?i=bootstrap&theme=dark)](https://en.wikipedia.org/wiki/Bootstrap)<br>
+
 # eComReactApp
 
 ## Description
@@ -42,32 +48,6 @@ Here there are a few key functionalities:
 
 ## Installation
 
-After opening this url: https://rococo-moxie-c67f22.netlify.app/ <br>
-you should see this in your browser:
-![Make-up Junkie](./public/Images/screenshot.png)
-
-## Technologies Used
-
-[![My Skills](https://skills.thijs.gg/icons?i=react&theme=dark)](https://en.wikipedia.org/wiki/React)
-[![My Skills](https://skills.thijs.gg/icons?i=html&theme=dark)](https://en.wikipedia.org/wiki/HTML)
-[![My Skills](https://skills.thijs.gg/icons?i=css&theme=dark)](https://en.wikipedia.org/wiki/CSS)
-[![My Skills](https://skills.thijs.gg/icons?i=javascript&theme=dark)](https://en.wikipedia.org/wiki/JavaScript)
-[![My Skills](https://skills.thijs.gg/icons?i=bootstrap&theme=dark)](https://en.wikipedia.org/wiki/Bootstrap)
-
-## Authors
-
-## [@OlgaFelczak](https://github.com/OlgaFelczak)
-
-## [@Pawel](https://github.com/Pav85)
-
-## [@Alexander](https://github.com/PurAlex)
-
-## License
-
-N/A
-
-## How to run
-
 To run this project you will need Node at least v 18. You can install it using nvm. To check what version of the node of have use the following command.
 
 `node -v`
@@ -80,3 +60,41 @@ Then go from the folder where this files lives you can restore packages and run 
 
 `yarn`
 `yarn dev`
+
+## Usage
+
+After opening this url:<br> https://rococo-moxie-c67f22.netlify.app/ <br>
+you should see this in your browser:
+![Make-up Junkie](./public/Images/screenshot.png)
+
+## Technologies Used
+
+This project was built using [Node v18.x](https://nodejs.org/en) and uses following technologies: <br>
+
+[Vite.js](https://vitejs.dev/) - for setting up development <br>
+[Yarn](https://classic.yarnpkg.com/en/) - for dependency management <br>
+[React.js](https://react.dev/) - for building the application <br>
+[React Bootstrap](https://react-bootstrap.github.io/) - framework for styling
+
+## Authors
+
+### [@OlgaFelczak](https://github.com/OlgaFelczak)
+
+### [@Pawel](https://github.com/Pav85)
+
+### [@Alexander](https://github.com/PurAlex)
+
+## Contributing
+
+You need to fork this repository and submit a pull request.
+
+## License
+
+N/A
+
+## Questions
+
+If you have any questions about this project, open an issue or contact us directly: <br>
+ofelczak@gmail.com <br>
+pawel.werbowy@gmail.com <br>
+nicky@email.com <br>
