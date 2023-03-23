@@ -17,6 +17,7 @@ Make-Up Junkie is a responsive e-commerce website of make-up products where the 
 **[Installation](#installation)**<br>
 **[Usage](#usage)**<br>
 **[Technologies Used](#technologies-used)**<br>
+**[API Reference](#api-reference)**<br>
 **[Authors](#authors)**<br>
 **[Contributing](#contributing)**<br>
 **[License](#license)**<br>
@@ -79,6 +80,12 @@ This project was built using [Node v18.x](https://nodejs.org/en) and uses follow
 [Yarn](https://classic.yarnpkg.com/en/) - for dependency management <br>
 [React.js](https://react.dev/) - for building the application <br>
 [React Bootstrap](https://react-bootstrap.github.io/) - framework for styling
+
+## API Reference
+
+All shop items were generated using the following API:
+
+https://rapidapi.com/brianiswu/api/makeup/ <br>
 
 ## Authors
 
