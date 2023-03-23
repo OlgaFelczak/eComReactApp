@@ -15,7 +15,6 @@ const HomeJumbotron = () => {
         <Button
           className='btn-primary jumbotron-btn'
           href='/store'
-          // onClick={InjectedCheckoutForm()}
         >
           Shop now
         </Button>
