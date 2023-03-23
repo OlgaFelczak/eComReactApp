@@ -16,7 +16,7 @@ Make-Up Junkie is a responsive e-commerce website of make-up products where the 
 **[Functionality](#functionality)**<br>
 **[Installation](#installation)**<br>
 **[Usage](#usage)**<br>
-**[Technologies & Packages Used](#technologies-&-packages-used)**<br>
+**[Technologies & Packages Used](#technologies--packages-used)**<br>
 **[API Reference](#api-reference)**<br>
 **[Resources](#resources)**<br>
 **[Authors](#authors)**<br>
