@@ -108,4 +108,4 @@ N/A
 If you have any questions about this project, open an issue or contact us directly: <br>
 ofelczak@gmail.com <br>
 pawel.werbowy@gmail.com <br>
-nicky@email.com <br>
+nicky-nico-1998@outlook.com <br>
