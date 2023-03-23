@@ -6,7 +6,7 @@ function About() {
     <div>
       <div>
         <img
-          src='../../public/Images/women.png'
+          src='/Images/women.png'
           className='card-img-top'
           alt='Photo of us'
         />
