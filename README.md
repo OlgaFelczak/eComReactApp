@@ -69,7 +69,7 @@ Then go from the folder where this files lives you can restore packages and run 
 
 ## Usage
 
-After opening this url:<br> https://rococo-moxie-c67f22.netlify.app/ <br>
+After opening this url:<br> https://ecom-react-app-makeup-junkie.netlify.app/ <br>
 you should see this in your browser:
 ![Make-up Junkie](./public/Images/screenshot.png)
 
