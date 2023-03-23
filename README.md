@@ -83,7 +83,7 @@ This project was built using [Node v18.x](https://nodejs.org/en) and uses follow
 [React Bootstrap](https://react-bootstrap.github.io/) - framework for styling <br>
 [API](https://en.wikipedia.org/wiki/API) - for store items <br>
 [Confetti React Component](https://github.com/ulitcos/react-canvas-confetti) - for confetti effect after purchase <br>
-[Create Context](https://legacy.reactjs.org/docs/context.html) - for shopping cart functionality <br>
+[Context](https://legacy.reactjs.org/docs/context.html) - for shopping cart functionality <br>
 [React Hook Form](https://react-hook-form.com/) - for the newsletter functionality <br>
 [React Icons](https://react-icons.github.io/react-icons/) - for all icons <br>
 
