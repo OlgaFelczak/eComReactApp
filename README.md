@@ -10,7 +10,7 @@ Make-Up Junkie is a responsive e-commerce website of make-up products where the 
 **[Functionality](#functionality)**<br>
 **[Installation](#installation)**<br>
 **[Technologies Used](#technologies-used)**<br>
-**[Authors](#authors)**
+**[Authors](#authors)**<br>
 
 ## User Story
 
@@ -25,7 +25,20 @@ I expect to be redirected to a page confirming my order
 
 ## Functionality
 
-To access the website click here:
+Make-up Junkie eCommerce app provides an intuitive and seamless shopping experience for customers.
+
+Here there are a few key functionalities:
+
+- Product catalog<br>
+  - the app displays a list of products from Api, including their prices, descriptions and images<br>
+- Shopping cart<br>
+  - user is able to add or remove products from the cart and proceed to checkout
+- Customer support <br>
+  - the provides customer contact information <br>
+- Newsletter <br>
+  - the app allows user to sign up for a newsletter<br>
+- Responsive design <br>
+  - the app is responsive and accessible on various devices including desktops, laptops, tablets and mobile phones<br>
 
 ## Installation
 
